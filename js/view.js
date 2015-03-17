@@ -2574,7 +2574,11 @@ SurfacingVisualization.prototype.setupThemes = function() {
 	for ( i = 0; i < n; i++ ) {
 		place = model.places[ i ];
 		combo = place.latitude + place.longitude;
-		if (( place.longitude != null ) && ( coords.indexOf( combo ) == -1 ) && ( isNaN( parseInt( place.getDisplayTitle().split( '_' )[ 0 ] ))) && ( model.getThemesForPlace( place ).length > 0 ) && (( model.getStoriesFromPlace( place ).length > 0 ) || ( place.images.length > 0 ))) {
+		if (( place.longitude != null ) && 
+			( coords.indexOf( combo ) == -1 ) && 
+			( isNaN( parseInt( place.getDisplayTitle().split( '_' )[ 0 ] ))) && 
+			/*( model.getThemesForPlace( place ).length > 0 ) && */
+			(( model.getStoriesFromPlace( place ).length > 0 ) || ( place.images.length > 0 ))) {
 			this.filteredPlaces.push( place );
 			coords.push( combo );
 		}
@@ -2852,7 +2856,17 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 			.attr( 'cx', function( d ) { return path.projection()( [ d.longitude, d.latitude ] )[0]; } )
 			.attr( 'cy', function( d ) { return path.projection()( [ d.longitude, d.latitude ] )[1]; } )
 			.style( 'display', function( d ) {
-				return ( ( view.localCablePlaces.indexOf( d ) != -1 ) || ( view.targetState == ViewState.Theme ) ) ? 'inline' : 'none';
+				if ( view.targetState == ViewState.Theme ) {
+					if ( model.getThemesForPlace( d ).length > 0 ) {
+						return 'inline';
+					} else {
+						return 'none';
+					}
+				} else if ( view.localCablePlaces.indexOf( d ) != -1 ) {
+					return 'inline';
+				} else {
+					return 'none';
+				}
 			} )
 			.attr( 'opacity', function( d ) {
 				return Math.min( 1.0, Math.abs( view.currentState - ViewState.Image ) );
