@@ -1,0 +1,281 @@
+/*.land { fill: #555; }*/
+.land { 
+	stroke-width: 1px; 
+	stroke: cyan; 
+	fill: rgba( 0, 0, 0, 0.25 );
+}
+.cable { stroke-width: 1px; stroke: #ad325e; }
+.theme { stroke-width: 1px; stroke: #605300; display: none; }
+.place { fill: #ad325e; cursor: pointer; stroke: #aaa; stroke-width: 1px; }
+.theme-ring { fill: none; stroke-width: 2px; }
+.theme-arc { stroke-width: 2px; }
+#controls { 
+	position: absolute; 
+	left: 10px; 
+	top: 10px;
+	background-color: rgba( 0, 0, 0, 0.9 ); 
+	padding: 5px; 
+	color: gray; 
+	display: none;
+}
+svg > image { 
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	cursor: pointer;
+}
+.story-image {
+	position: absolute;
+	box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.5 );
+	cursor: pointer;
+	-webkit-transform-origin: center center;
+	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+	-moz-transform-origin: center center;
+	-moz-transition: -webkit-transform 1s ease, opacity 1s ease;
+	opacity: 0;
+}
+body { 
+	font-size: 13px; 
+	overflow: hidden;
+	line-height: 120%;
+	-webkit-perspective: 200px;
+	-webkit-perspective-origin: 50% 50%;
+	-moz-perspective: 200px;
+	-moz-perspective-origin: 50% 50%;
+}
+#background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	opacity: 0.35;
+	z-index: -99;
+	-webkit-transition: opacity .5s ease-in-out, -webkit-transform 1s ease-out;
+	-moz-transition: opacity .5s ease-in-out, -moz-transform 1s ease-out;
+	-o-transition: opacity .5s ease-in-out, -o-transform 1s ease-out;
+	-ms-transition: opacity .5s ease-in-out, -ms-transform 1s ease-out;
+	transition: opacity .5s ease-in-out, transform 1s ease-out;
+}
+#message-box { 
+	position: absolute; 
+	width: 300px; 
+	height: 175px; 
+	overflow-y: auto; 
+	bottom: 10px; 
+	left: 10px; 
+	background-color: gray; 
+	color: white; 
+	z-index: 99; 
+	padding: 10px;
+	overflow-y: auto;
+	display: none;
+}
+#zoom-controls {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 60px;
+	z-index: 99;
+	display: none;
+	text-align: center;
+	color: #b8b8b8;
+	text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 );
+}
+#zoom-controls div:first-child { margin-bottom: 10px; cursor: default; }
+#zoom-controls div:last-child { margin-top: 7px; cursor: default; }
+#zoom-controls img { cursor: pointer; }
+#chips {
+	position: absolute;
+	width: 450px;
+	max-height: 100%;
+	top: 10px;
+	left: 10px;
+	overflow-y: auto;
+	/*bottom: 10px;*/
+	display: none;
+}
+.chip {
+	padding: 10px 15px;
+	color: white;
+	background-color: black;
+	margin-bottom: 10px;
+	border: 1px solid gray;
+	max-height: 0;
+	overflow-y: auto;
+	font-size: 14px;
+	line-height: 130%;
+	width: 200px;
+	-webkit-font-smoothing: antialiased;
+}
+.chip.highlight {
+	border-color: white;
+}
+.chip.place {
+	padding: 15px 20px;
+	font-size: 21px;
+	margin-left: 50px;
+	margin-top: 50px;
+	width: 400px;
+	line-height: 140%;
+	background-color: rgba( 0, 0, 0, 0.5 ) !important;
+}
+.chip.place a {
+	color: #aaa;
+}
+.chip.place h1 {
+	font-size: 26px;
+	margin-bottom: 12px; 
+}
+.chip h1 { font-weight: bold; margin-bottom: 6px; }
+/*#stage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-perspective: 200px;
+	-webkit-perspective-origin: 50% 50%;
+	width: 100%;
+	height: 100%;
+}*/
+#expanded-story {
+	font-size: 24px;
+	color: white;
+	width: 100%;
+	position: absolute;
+	line-height: 130%;
+	height: 100%;
+	
+	-webkit-transform-origin: center center;
+	-webkit-transform: translate3d( 60%, 40%, 0 );
+	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+	-moz-transform-origin: center center;
+	-moz-transform: translate3d( 60%, 40%, 0 );
+	-moz-transition: -webkit-transform 1s ease, opacity 1s ease;
+	
+	z-index: 99;
+}
+#story-container { width: 35%; height: 55%; overflow: auto; border-bottom: 2px solid gray; padding-left: 20px; }
+#expanded-story h1 { font-size: 36px; font-weight: bold; margin-bottom: 40px; }
+.link {
+	stroke: #999;
+	stroke-opacity: .6;
+}
+.item {
+	position: absolute;
+	cursor: pointer;
+}
+.story-item {
+	border: 1px solid gray;
+	padding: 10px 15px;
+	background: #eee;
+	max-width: 350px;
+	z-index: 98;
+	font-size: 16px;
+	line-height: 130%;
+}
+.story-item h1 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.story-item p {
+	margin-top: 6px;
+}
+.story-item div.desc {
+	max-height: 220px;
+	overflow-y: auto;
+	padding: 10px;
+	background-color: #ccc;
+}
+.story-item a {
+	color: #666;
+}
+.theme-item {
+	font-size: 56px;
+	line-height: 120%;
+	color: #555;
+}
+.image-item {
+	z-index : 99;
+	border: none;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* fix for leaving junk pixel trails - http://stackoverflow.com/questions/9983520/webkit-animation-is-leaving-junk-pixels-behind-on-the-screen */
+}
+.image-item.highlighted {
+	border: 2px solid yellow;
+}
+#splash-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba( 0, 0, 0, 0.75 );
+	z-index: 100;
+}
+#splash-box {
+	position: absolute;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
+	top: 8%;
+	background: black;
+	border: 1px solid #666;
+	color: #ddd;
+	font-size: 21px;
+	padding: 30px;
+	max-height: 68%;
+	overflow-y: auto;
+	-webkit-font-smoothing: antialiased;
+}
+#splash-box h1 {
+	font-size: 38px;
+	color: white;
+	margin-bottom: 15px;
+}
+.credits {
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 40px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+#splash-box p {
+	margin-bottom: 15px;
+	line-height: 120%;
+}
+#splash-box p.alert { color: #0084d6; }
+.button {
+	font-size: 21px;
+	text-align: center;
+	display: inline-block;
+	margin-top: -20px;
+	background: #ad325e;
+	color: white;
+	padding: 8px 12px;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	position: absolute;
+	width: 150px;
+	left: 50%;
+	margin-left: -75px;
+	top: 82%;
+	box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.5 );
+	-webkit-font-smoothing: antialiased;
+}
+.button:hover {
+	background: #444;
+}
+#logo-box {
+	position: absolute;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
+	text-align: center;
+	top: 88%;
+	color: white;
+}
+#logo-box img {
+	margin: 0 5px 5px 5px;
+}
+.year {
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 0;
+}

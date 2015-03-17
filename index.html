@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Surfacing</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href="css/reset.css" type="text/css" rel="stylesheet">
+		<link href="css/global.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.history.js"></script>
+		<script type="text/javascript" src="js/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/d3.geo.projection.v0.min.js"></script>
+		<script type="text/javascript" src="js/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="http://scalar.usc.edu/nehvectors/system/application/views/widgets/api/scalarapi.js"></script>
+		<script type="text/javascript" src="js/model.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+		<script type="text/javascript" src="js/view.js"></script>
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+			
+				var i;
+				for ( i = 2015; i >= 1988; i-- ) {
+					$( '#year-2015' ).append( '<p class="year">' + i + '</p>' );
+				}
+				for ( i = 1987; i >= 1956; i-- ) {
+					$( '#year-1956' ).append( '<p class="year">' + i + '</p>' );
+				}
+				for ( i = 1955; i >= 1850; i-- ) {
+					$( '#year-1850' ).append( '<p class="year">' + i + '</p>' );
+				}
+			
+				view.init();
+				controller.init();
+			
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="background"></div>
+		<div id="zoom-controls">
+			<div>&nbsp;<br>&nbsp;</div>
+			<img id="top-zoom-btn" src="images/minus_btn_top.png" alt="Zoom in button" width="30" height="38" />
+			<img id="bottom-zoom-btn" src="images/minus_btn_bottom.png" alt="Zoom out button" width="30" height="38" />
+			<div>&nbsp;<br>&nbsp;</div>
+		</div>
+        <div id="chips"></div>
+        <div id="message-box"></div>
+        <div id="splash-container">
+	        <div id="splash-box">
+	        	<h1>Surfacing</h1>
+	        	<p class="credits">by Nicole Starosielski, Erik Loyer, and Shane Brennan<br>Design and programming by Erik Loyer</p>
+	        	<p class="alert">This is a preview of Surfacing.<br>Full release is scheduled for March 20, 2015.</p>
+	        	<p>Undersea fiber-optic cables are critical infrastructures that support our global network society.</p> 
+				<p>They transport 99% of all transoceanic digital communications, including:<br>
+				phone calls,<br>
+				text messages,<br>
+				email,<br>
+				websites,<br>
+				digital images and video,<br>
+				and even some television.</p>
+				<p>It is submarine systems, rather than satellites, that carry most of the Internet across the oceans.</p>
+				<div id="year-2015"></div>
+				<p>Before this, there were undersea telephone cables</p>
+				<div id="year-1956"></div>
+				<p>And even before that, undersea telegraph cables.</p>
+				<div id="year-1850"></div>
+				<p>In Surfacing, you are a signal:<br>
+				a love note,<br>
+				a winning score,<br>
+				a credit card number,<br>
+				a cat video.</p>
+				<p>Like the billions of signals before and after, you are tasked to traverse the undersea network.</p> 
+				<p>You begin in Southern California, in the year 2015.</p>
+			</div>
+			<a class="button" href="javascript:;" onclick="javascript:view.hideSplash();">Start</a>
+			<div id="logo-box">
+				<a href="http://www.suboptic.org/suboptic-2016/"><img src="images/SubOptic 2016 Logo.jpg" alt="SubOptic 2016 Logo" height="50"/></a><a href="https://iscpc.org/"><img src="images/ICPC Logo.jpg" alt="ICPC Logo" height="50"/></a><br>Sponsored by SubOptic 2016 &amp; ICPC
+			</div>
+        </div>
+	</body>
+</html>

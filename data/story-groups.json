@@ -1,0 +1,1057 @@
+{
+  "http://scalar.usc.edu/nehvectors/surfacing/story-group" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T07:50:24-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13943", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/story-group.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "This tag specifies that the associated page is a story group and tags several story parts.", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T07:50:24-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:40887", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:52436:40887" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:52436:40887", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/landing.2", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/landing" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T17:28:12-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15938", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/landing.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/landing.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/landing.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Landing", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T17:30:14-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52436", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/landing", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:62860" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:62860", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/manhole-1.3", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/manhole-1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-20T07:42:02-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:25538", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/manhole-1.3", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/manhole-1.3", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/manhole-1.3" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "3", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Manhole", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-20T07:46:36-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:62860", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/manhole-1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:40934" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:40934", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/erasing-history-2.3", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/erasing-history-2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T08:04:18-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13945", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/erasing-history-2.3", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/erasing-history-2.3", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/erasing-history-2.3" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "3", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Erasing history", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T08:18:40-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:40934", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/erasing-history-2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52418" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52418", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/marine-maintenance.3", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/marine-maintenance" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T16:21:20-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15928", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/marine-maintenance.3", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/marine-maintenance.3", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/marine-maintenance.3" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "3", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Marine maintenance", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T16:30:20-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52418", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/marine-maintenance", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:41006" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:41006", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-tours-2.3", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-tours-2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T09:01:31-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13956", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-tours-2.3", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-tours-2.3", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-tours-2.3" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "3", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Cable tours", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T09:10:01-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:41006", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-tours-2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:51844" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:51844", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/training-2.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/training-2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T11:39:39-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13997", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/training-2.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/training-2.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/training-2.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Training", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-09-25T09:21:57-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:51844", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/training-2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:40986" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:40986", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-colony.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-colony" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T08:55:48-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13955", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-colony.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-colony.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-colony.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Cable colony", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T08:58:42-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:40986", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-colony", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52406" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52406", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/disruption-1.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/disruption-1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T14:16:26-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15926", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/disruption-1.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/disruption-1.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/disruption-1.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Disruption", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T14:17:25-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52406", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/disruption-1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52429" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52429", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/piracy-1.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/piracy-1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T17:16:46-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15936", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/piracy-1.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/piracy-1.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/piracy-1.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Piracy", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-07T17:18:31-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52429", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/piracy-1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52252" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52252", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/strategies-of-insulation-1.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/strategies-of-insulation-1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-06T19:24:42-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15887", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/strategies-of-insulation-1.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/strategies-of-insulation-1.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/strategies-of-insulation-1.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Strategies of insulation", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-06T19:24:42-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52252", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/strategies-of-insulation-1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52268" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52268", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/precarious-infrastructures.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/precarious-infrastructures" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-06T20:24:18-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15895", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/precarious-infrastructures.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/precarious-infrastructures.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/precarious-infrastructures.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Precarious infrastructures", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-06T20:24:19-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52268", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/precarious-infrastructures", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:41224" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:41224", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surveillance-2.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/surveillance-2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T11:29:38-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:13992", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surveillance-2.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surveillance-2.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/surveillance-2.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Surveillance", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2013-05-07T11:29:38-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:41224", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surveillance-2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:52545" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:52545", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-magazines.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-magazines" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-09T13:38:23-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:15994", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-magazines.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-magazines.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/cable-magazines.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Cable magazines", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      { "value" : "Story group", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-10-09T13:38:23-07:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:52545", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/cable-magazines", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:40887:61847" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:40887:61847", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/story-group.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/earthquake-1.1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/earthquake-1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-06T04:43:47-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:25097", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/earthquake-1.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/earthquake-1.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/story-group;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/earthquake-1.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Earthquake", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-06T04:43:47-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:61847", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/earthquake-1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  } 
+}

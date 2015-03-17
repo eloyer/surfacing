@@ -1,0 +1,58 @@
+{
+  "http://scalar.usc.edu/nehvectors/surfacing/place-1200-1499" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/20", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-05T12:54:40-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:23693", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1200-1499.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1200-1499.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node\/place-1200-1499;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/place-1200-1499.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Place 1200-1499", "type" : "literal" }
+    ],
+    "http://rdfs.org/sioc/ns#content" : [
+      { "value" : "Tags places 1200-1499 imported from the Telegeography data.", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/20", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-05T12:54:40-08:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:60433", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1200-1499", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+    ]
+  } 
+}
