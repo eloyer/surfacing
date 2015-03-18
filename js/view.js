@@ -198,6 +198,7 @@ SurfacingView.prototype.currentTheme = null;
 SurfacingView.prototype.currentCable = null;
 SurfacingView.prototype.initialized = null;
 SurfacingView.prototype.launchContentRestored = null;
+SurfacingView.prototype.hasBeenDragged = null;
 
 SurfacingView.prototype.init = function() {
 
@@ -206,104 +207,16 @@ SurfacingView.prototype.init = function() {
 	$( '#zoom-controls' ).data( 'zoomOutBtn', 'bottom' );
 	
 	$( '#top-zoom-btn' ).click( function() {
-	
 		if ( $( this ).attr( 'src' ) != 'images/empty_btn_top.png' ) {
-			view.decrementViewState();
+			view.centerOnCurrentPlace( view.decrementViewState );
 		}
-	
-		/*switch ( view.targetState ) {
-		
-			case ViewState.Story:
-			// if the user last clicked the top button to zoom in, then do so
-			if ( $( '#zoom-controls' ).data( 'zoomOutBtn' ) == 'bottom' ) {
-				view.incrementViewState();
-			} else {
-				view.decrementViewState();
-			}
-			break;
-			
-			case ViewState.Place:
-			case ViewState.Map:
-			// if the user last clicked the top button to zoom in, then do so
-			if ( $( '#zoom-controls' ).data( 'zoomOutBtn' ) == 'bottom' ) {
-				view.decrementViewState();
-			} else {
-				view.incrementViewState();
-			}
-			break;
-			
-			case ViewState.Theme:
-			$( '#zoom-controls' ).data( 'zoomOutBtn', 'bottom' );
-			// if the user arrived here from the Story view, then zoom in to the Map view
-			if ( view.lastState == ViewState.Story ) {
-				view.decrementViewState();
-			} else {
-				view.incrementViewState();
-			}
-			break;
-		
-			case ViewState.Image:
-			$( '#zoom-controls' ).data( 'zoomOutBtn', 'top' );
-			// if the user arrived here from the Story view, then zoom out to the Place view
-			if ( view.lastState == ViewState.Story ) {
-				view.incrementViewState();
-			} else {
-				view.decrementViewState();
-			}
-			break;
-		
-		}*/
 		
 	} );
 	
 	$( '#bottom-zoom-btn' ).click( function() {
-	
 		if ( $( this ).attr( 'src' ) != 'images/empty_btn_bottom.png' ) {
-			view.incrementViewState();
+			view.centerOnCurrentPlace( view.incrementViewState );
 		}
-		
-		/*switch ( view.targetState ) {
-		
-			case ViewState.Story:
-			// if the user last clicked the bottom button to zoom out, then do so
-			if ( $( '#zoom-controls' ).data( 'zoomOutBtn' ) == 'bottom' ) {
-				view.decrementViewState();
-			} else {
-				view.incrementViewState();
-			}
-			break;
-			
-			case ViewState.Place:
-			case ViewState.Map:
-			// if the user last clicked the bottom button to zoom out, then do so
-			if ( $( '#zoom-controls' ).data( 'zoomOutBtn' ) == 'bottom' ) {
-				view.incrementViewState();
-			} else {
-				view.decrementViewState();
-			}
-			break;
-			
-			case ViewState.Theme:
-			$( '#zoom-controls' ).data( 'zoomOutBtn', 'top' );
-			// if the user arrived here from the Story view, then zoom in to the Map view
-			if ( view.lastState == ViewState.Story ) {
-				view.decrementViewState();
-			} else {
-				view.incrementViewState();
-			}
-			break;
-		
-			case ViewState.Image:
-			$( '#zoom-controls' ).data( 'zoomOutBtn', 'bottom' );
-			// if the user arrived here from the Story view, then zoom out to the Place view
-			if ( view.lastState == ViewState.Story ) {
-				view.incrementViewState();
-			} else {
-				view.decrementViewState();
-			}
-			break;
-		
-		}*/
 		
 	} );
 	
@@ -377,6 +290,7 @@ SurfacingView.prototype.decrementViewState = function( ) {
 			wrappedState = newState;
 		}
 		//alert( 'current: ' + view.targetState + ' / new: ' + wrappedState + ' / action: zoom in  / zoom out btn: ' + $( '#zoom-controls' ).data( 'zoomOutBtn' ) );
+
 		view.setState( wrappedState );
 		view.updateURL();
 	}
@@ -403,6 +317,7 @@ SurfacingView.prototype.incrementViewState = function( ) {
 		wrappedState = newState;
 	}
 	//alert( 'current: ' + view.targetState + ' / new: ' + wrappedState + ' / action: zoom out  / zoom out btn: ' + $( '#zoom-controls' ).data( 'zoomOutBtn' ) );
+
 	view.setState( wrappedState );
 	view.updateURL();
 
@@ -579,6 +494,7 @@ SurfacingView.prototype.setState = function(state, forceReset) {
 		
 		this.lastState = this.targetState;
 		this.targetState = state;
+		this.hasBeenDragged = false;
 		this.update();
 	//}
 
@@ -862,6 +778,24 @@ SurfacingView.prototype.selectPlace = function( place ) {
 	}
 	view.update();
 	
+}
+
+SurfacingView.prototype.centerOnCurrentPlace = function( callback ) {
+
+	if (( this.currentPlace != null ) && (( view.targetState == ViewState.Map ) || ( view.targetState == ViewState.Theme )) && view.hasBeenDragged ) {
+	
+		var angleOffset
+		if ( view.currentImage == null ) {
+			angleOffset = [ 0, 0 ];
+		} else {
+			angleOffset = this.currentImage.angleOffset;
+		}
+
+		view.visualization.rotateTo( [ this.currentPlace.longitude + angleOffset[ 0 ], this.currentPlace.latitude + angleOffset[ 1 ] ], null, callback );
+	} else {
+		callback();
+	}
+
 }
 
 SurfacingView.prototype.selectCable = function( cable ) {
@@ -2152,171 +2086,43 @@ function SurfacingVisualization() {
 	var φ = d3.scale.linear()
 	    .domain([0, this.canvasHeight])
 	    .range([90, -90]);*/
-	
+
+
+	var drag = d3.behavior.drag()
+		.on("dragstart", function() {
+			// Adapted from http://mbostock.github.io/d3/talk/20111018/azimuthal.html and updated for d3 v3
+			var proj = me.currentProjection.rotate();
+			m0 = [d3.event.sourceEvent.pageX, d3.event.sourceEvent.pageY];
+			o0 = [-proj[0],-proj[1]];
+		})
+		.on("drag", function() {
+			if (( view.targetState == ViewState.Map ) || ( view.targetState == ViewState.Theme )) {
+
+				view.hasBeenDragged = true;
+
+				if (m0) {
+					var m1 = [d3.event.sourceEvent.pageX, d3.event.sourceEvent.pageY],
+					    o1 = [o0[0] + (m0[0] - m1[0]) / 4, o0[1] + (m1[1] - m0[1]) / 4];
+					me.currentProjection.rotate([-o1[0], -o1[1]]);
+				}
+
+				// Update the map
+				me.path = d3.geo.path().projection(me.currentProjection);
+				d3.selectAll("path").attr("d", path);
+			}
+		});
+
 	this.svg = d3.select("body").append("svg")
 	    .attr("width", this.canvasWidth)
 	    .attr("height", this.canvasHeight)
-    	.on("mousedown", mousedown); 
-	    
-	/*this.svg.on("mousemove", function() {
-	  var p = d3.mouse(this);
-	  me.projection.rotate([λ(p[0]), φ(p[1])]);
-	  me.svg.selectAll("path").attr("d", me.path);
-	});*/
+    	.call( drag ); 
 	
 	d3.json("data/world-110m.json", function(error, world) {
 		me.svg.append("path")
 			.datum(topojson.feature(world, world.objects.land))
 			.attr("class", "land")
-			.attr( 'stroke', 'none' )
-			/*.attr("d", me.path)*/;
+			.attr( 'stroke', 'none' );
 	});
-	
-	//d3.select(window)
-	    /*.on("mousemove", mousemove)*/
-	    //.on("mouseup", mouseup);
-	    
-	$( window ).mousemove( mousemove );
-	$( window ).mouseup( mouseup );
-	    
-	/*d3.select("#projection_select").on("change", function() {
-		me.currentProjection = me.projections[ this.value ];
-		me.currentProjection.scale( parseInt( $( '#scale_control' )[0].value ) );
-		me.path = d3.geo.path().projection(me.currentProjection);
-		me.svg.selectAll("path").transition().duration( 750 ).attr( 'd', me.path );
-	    me.svg.selectAll( 'image' ).transition().duration( 750 )
-	    	.attr( 'x', function( d ) { return me.path.projection()( d.coordinates )[0]; } )
-	    	.attr( 'y', function( d ) { return me.path.projection()( d.coordinates )[1]; } );
-		me.themePaths.data( me.themeVoronoi( me.filteredPlaces ) );
-		me.themePaths.attr( 'd', function( d ) { return "M" + d.join("L") + "Z"; } );
-		//me.currentProjection.mode( this.value ).scale( me.scale[ this.value ] );
-		//refresh( 750 );
-		//me.svg.selectAll("path").attr( 'd', me.path );
-	});
-	
-	d3.select( '#scale_control' ).on( 'change', function() {
-		//console.log( parseInd( this.value ) );
-		me.currentProjection.scale( parseInt( this.value ) );
-		refresh();
-	});
-	
-	d3.select( '#view_select' ).on( 'change', function() {
-		view.setState( parseInt( this.value ) );
-	} );
-	
-	d3.select( '#land_control' ).on( 'change', function() {
-		if ( this.checked ) {
-			$( 'svg > .land' ).show();
-		} else {
-			$( 'svg > .land' ).hide();
-		}
-	});
- 	
-	d3.select( '#image_control' ).on( 'change', function() {
-		if ( this.checked ) {
-			refresh();
-		} else {
-			$( 'svg > image' ).hide();
-		}
-	});
- 	
-	d3.select( '#cable_control' ).on( 'change', function() {
-		if ( this.checked ) {
-			$( 'svg > .cable' ).show();
-		} else {
-			$( 'svg > .cable' ).hide();
-		}
-	});
- 	
-	d3.select( '#theme_control' ).on( 'change', function() {
-		if ( this.checked ) {
-			$( '.theme' ).show();
-		} else {
-			$( '.theme' ).hide();
-		}
-	});*/
-   	
-	var m0,
-	    o0;
-	
-	function mousedown() {
-		
-		/*if ( ( view.targetState == ViewState.Story ) || ( view.targetState == ViewState.Theme ) ) {
-			m0 = [d3.event.pageX, d3.event.pageY];
-			o0 = me.currentProjection.rotate();
-			d3.event.preventDefault();
-			me.isMouseDown = true;
-		}*/
-		
-	}
-	
-	function mousemove(event) {
-		
-		/*if ( ( view.targetState == ViewState.Story ) || ( view.targetState == ViewState.Theme ) ) {
-			me.mouseMovedThisFrame = true;
-			
-		 	if (m0 && ( event != null ) ) {
-			    var m1 = [event.pageX, event.pageY];
-			    
-			    var rate;
-			    switch ( view.targetState ) {
-			    
-			    	case ViewState.Place:
-			    	rate = -40;
-			    	break;
-			    	
-			    	default:
-			    	rate = -4;
-			    	break;
-			    	
-		    	}
-		    
-		    	me.targetRotation = [o0[0] + (m0[0] - m1[0]) / rate, o0[1] + (m1[1] - m0[1]) / rate];
-		    
-		    	me.redraw( d3.geo.path().projection( me.currentProjection ) );
-		    
-		    	me.findNearestPlace();
-			}
-		}*/
-		
-	}
-	
-	function mouseup() {
-	  if (m0) {
-	    mousemove();
-	    //me.currentProjection.rotate( me.targetRotation );
-	    m0 = null;
-	  }
-	  me.isMouseDown = false;
-	}
-	
-	/*function refresh( duration ) {
-	
-		//(duration ? me.svg.selectAll("path").transition().duration(duration) : me.svg.selectAll("path")).attr("d", me.path);
-		
-		var centerPos = me.currentProjection.invert( [ me.canvasWidth / 2, me.canvasHeight / 2 ] ),
-			arc = d3.geo.greatArc();
-		
-		me.path = d3.geo.path().projection( me.currentProjection );
-		me.svg.selectAll("path").attr( 'd', me.path );
-	    me.svg.selectAll( 'image' )
-	    	.attr( 'x', function( d ) { return me.path.projection()( d.coordinates )[0]; } )
-	    	.attr( 'y', function( d ) { return me.path.projection()( d.coordinates )[1]; } )
-	    	.style( 'display', function( d ) {
-	    		var dist = arc.distance( { source: d.coordinates, target: centerPos } );
-	    		return ( ( dist > 1.57 ) || !$( '#image_control' )[0].checked ) ? 'none' : 'inline';
-	    	} );
-		me.themePaths.data( me.themeVoronoi( me.filteredPlaces ) );
-		me.themePaths.attr( 'd', function( d ) { return "M" + d.join("L") + "Z"; } );
-		
-	}*/
-		
-	/*d3.json("data/world-countries.json", function(collection) {
-	  feature = svg.selectAll("path")
-	  	.data(collection.features)
-	  	.enter().append("svg:path")
-	  	.attr("d", path);
-	});*/
 	
 }
 
