@@ -446,7 +446,7 @@ SurfacingView.prototype.handleLoadCompleted = function( type ) {
 			//this.selectImage( scalarapi.getNode( 'media/sumay-cable-station-plans' ) );
 			//this.selectImage( scalarapi.getNode( 'media/bamfield-marine-sciences-center' ) );
 			//this.selectImage( scalarapi.getNode( 'media/sans-souci-celebration' ) );
-			this.selectImage( scalarapi.getNode( 'media/morro-bay-beach' ) );
+			this.selectImage( model.startingPoints[ Math.floor( Math.random() * model.startingPoints.length ) ] );
 			view.updateURL();
 		} else {
 			this.hideSplash();

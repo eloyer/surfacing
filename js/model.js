@@ -22,6 +22,7 @@ function SurfacingModel() {
 SurfacingModel.prototype.images = null;				// Array of all images in the project
 SurfacingModel.prototype.places = null;				// Array of all places in the project
 SurfacingModel.prototype.nonBranchPlaces = null;	// Array of all places in the project that aren't branches
+SurfacingModel.prototype.startingPoints = null;		// Array of all starting point places in the project
 SurfacingModel.prototype.stories = null;			// Array of all stories in the project
 SurfacingModel.prototype.storyGroups = null;		// Array of all story groups in the project
 SurfacingModel.prototype.cables = null;				// Array of all cables in the project

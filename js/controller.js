@@ -204,6 +204,40 @@ SurfacingController.prototype.handlePlaces = function() {
 	model.postProcessPlaces();
 	view.handleLoadCompleted( 'places' );
 	
+	controller.getStartingPoints();
+
+}
+
+SurfacingController.prototype.getStartingPoints = function() {
+
+	//console.log( 'get starting points' );
+
+	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/starting-point?rec=1&ref=0&format=json
+
+	if ( !this.useLocalData ) {
+		scalarapi.loadPage('starting-point', true, this.handleStories, null, 1);
+	} else {
+		$.ajax({
+			type:"GET",
+			url:"data/starting-points.json",
+			dataType:"json",
+			success:[scalarapi.parsePage, this.handleStartingPoints],
+			error:scalarapi.handleLoadPageError
+		});
+	}
+
+}
+
+SurfacingController.prototype.handleStartingPoints = function() {
+
+	console.log( 'got starting points' );
+
+	model.startingPoints = [];
+	var startingPointTag = scalarapi.getNode( 'starting-point' );
+	model.startingPoints = startingPointTag.getRelatedNodes( 'tag', 'outgoing' );
+	
+	view.handleLoadCompleted( 'starting points' );
+	
 	controller.getStories();
 
 }
