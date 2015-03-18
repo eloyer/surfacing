@@ -990,8 +990,10 @@ function SurfacingStories() {
 	var color = d3.scale.category20();
 	
 	this.force = d3.layout.force()
-	    .charge( -3000 )
-	    .linkDistance( 10 )
+	    .chargeDistance( Math.max( this.canvasWidth, this.canvasHeight ) )
+	    .charge( -400 )
+	    .linkDistance( 300 )
+	    .friction( 0.5 )
 	    .size( [ this.canvasWidth, this.canvasHeight ] );
 
 	/*this.svg = d3.select( "body" ).append( "svg" )
@@ -1122,7 +1124,7 @@ SurfacingStories.prototype.update = function() {
 		if ( this.items.length == 0 ) {
 		
 			var i, j, k, n, o, p, story, stories, storyGroup, images, image, storyItem, storyGroupSiblings,
-				imageItem, themeItem;
+				imageItem, themeItem, item;
 			
 			this.storyItems = [],
 			this.imageItems = [];
@@ -1251,6 +1253,15 @@ SurfacingStories.prototype.update = function() {
 				}
 			}
 		
+		}
+
+		n = this.items.length;
+		for ( i = 0; i < n; i++ ) {
+			item = this.items[ i ];
+			if ( item.x == null ) {
+				item.x = this.canvasWidth * .5;
+				item.y = this.canvasHeight * .5;
+			}
 		}
 		
 		//view.log( this.storyItems.length + ' story items, ' + this.imageItems.length + ' image items, ' + this.themeItems.length + ' theme items' );
@@ -2566,9 +2577,11 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 			}*/
 		}	
 		
-		if ( !model.muteMap ) {
+		if ( !model.muteMap /*&& ( view.targetState != ViewState.Story )*/ ) {
+
 			this.svg.selectAll( 'path' )
 				.attr( 'd', path );
+
 		}
 			
 		var landOpacity = interpolateKeyframes( this.landOpacityKeyframes, view.currentState );
@@ -2577,7 +2590,7 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 		this.svg.selectAll( '.land' )
 			.attr( 'opacity', landOpacity )
 			.attr( 'display', landDisplay );
-			
+
 	    /*this.svg.selectAll( 'image' )
 	    	.attr( 'xlink:href', function( d ) { 
 	    		/*if ( me.currentImage == d.image ) {
