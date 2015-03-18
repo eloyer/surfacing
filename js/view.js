@@ -562,6 +562,10 @@ SurfacingView.prototype.hideSplash = function() {
 	$( '#splash-container' ).fadeOut();
 }
 
+SurfacingView.prototype.hideHelp = function() {
+	$( '#help' ).fadeOut();
+}
+
 /**
  * Transitions to the specified state.
  */
