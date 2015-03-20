@@ -190,12 +190,12 @@ SurfacingController.prototype.handlePlaces = function() {
 	console.log( 'got places' );
 
 	model.places = [];
-	var placeTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'place'];
+	var placeTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'place' );
 	model.places = placeTag.getRelatedNodes('tag', 'outgoing');
 
 	var i;
 	for ( i = 1; i < this.placeFiles.length; i++ ) {
-		placeTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix + this.placeFiles[ i ] ];
+		placeTag = scalarapi.getNode( scalarapi.model.urlPrefix + this.placeFiles[ i ] );
 		model.places = model.places.concat( placeTag.getRelatedNodes('tag', 'outgoing') );
 	}
 
@@ -270,7 +270,7 @@ SurfacingController.prototype.handleStories = function() {
 	console.log( 'got stories' );
 
 	model.stories = [];
-	var storyTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'story'];
+	var storyTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'story' );
 	model.stories = storyTag.getRelatedNodes('tag', 'outgoing');
 	
 	for ( var i in model.stories ) {
@@ -314,7 +314,7 @@ SurfacingController.prototype.handleStoryGroups = function() {
 	//console.log( 'got story groups' );
 
 	model.storyGroups = [];
-	var storyGroupTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'story-group'];
+	var storyGroupTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'story-group' );
 	model.storyGroups = storyGroupTag.getRelatedNodes('tag', 'outgoing');
 	view.handleLoadCompleted();
 	
@@ -419,7 +419,7 @@ SurfacingController.prototype.handleCables = function() {
 
 	var i, cableTag;
 	for ( i = 0; i < this.cableFiles.length; i++ ) {
-		cableTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix + this.cableFiles[ i ] ];
+		cableTag = scalarapi.getNode( scalarapi.model.urlPrefix + this.cableFiles[ i ] );
 		model.cables = model.cables.concat( cableTag.getRelatedNodes( 'tag', 'outgoing' ) );
 	}
 
@@ -430,9 +430,9 @@ SurfacingController.prototype.handleCables = function() {
 	model.cables = cableTag.getRelatedNodes('tag', 'outgoing');
 	*/
 
-	model.branchPointTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'branching-point'];
-	model.ringTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'ring-1'];
-	var cableGroupTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'cable-group'];
+	model.branchPointTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'branching-point' );
+	model.ringTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'ring-1' );
+	var cableGroupTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'cable-group' );
 	model.cableGroups = cableGroupTag.getRelatedNodes('tag', 'outgoing');
 
 	var n = model.cableGroups.length;
@@ -475,7 +475,7 @@ SurfacingController.prototype.handleThemes = function() {
 	//console.log( 'got themes' );
 
 	model.themes = [];
-	var themeTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'theme'];
+	var themeTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'theme' );
 	model.themes = themeTag.getRelatedNodes('tag', 'outgoing');
 	
 	model.postProcessThemes();
