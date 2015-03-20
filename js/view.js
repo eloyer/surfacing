@@ -140,38 +140,29 @@ function SurfacingView() {
 	this.launchContentRestored = false;
 	
 	this.stateData[ ViewState.Theme ] = {
-		//projection: d3.geo.orthographic().scale( 5 )
 		projection: d3.geo.mercator().clipAngle( 90 )
 	};
 	
 	this.stateData[ ViewState.Map ] = {
-		//projection: d3.geo.orthographic().scale( 2.5 ).clipAngle( 90 )
 		projection: d3.geo.mercator().clipAngle( 90 )
 	};
 	
 	this.stateData[ ViewState.Place ] = {
-		//projection: d3.geo.orthographic().scale( 60 ).clipAngle( 90 )
 		projection: d3.geo.mercator().clipAngle( 90 )
 	};
 	
 	this.stateData[ ViewState.Image ] = {
-		//projection: d3.geo.orthographic().scale( 70 ).clipAngle( 90 )
 		projection: d3.geo.mercator().clipAngle( 90 )
 	};
 	
 	this.stateData[ ViewState.Story ] = {
 		projection: d3.geo.mercator().clipAngle( 90 )
-		//projection: d3.geo.orthographic().scale( 10 )
-		/*projection: d3.geo.satellite()
-		    .distance(1.1)
-		    .scale(15)
-		    .clipAngle( 30 )
-		    .precision(.1)*/
 	}
 	
 	// restores content when back/forward buttons clicked (but not when state changes are pushed to History.js)
     $(window).bind('popstate', function(e){
 		if (typeof e['originalEvent'] !== 'undefined') {
+			me.launchContentRestored = false;
 			me.restoreContentFromURL();
 		}
 	});
@@ -275,21 +266,21 @@ SurfacingView.prototype.perFrame = function( type ) {
 
 SurfacingView.prototype.decrementViewState = function( ) {
 
-	if (( view.targetState == ViewState.Image ) && ( this.currentImage.stories.length == 0 )) {
-		this.incrementViewState();
+	if (( view.targetState == ViewState.Image ) && ( view.currentImage.stories.length == 0 )) {
+		view.incrementViewState();
 	} else {
 		var wrappedState,
 			newState = view.targetState - 1;
 		//if (( view.currentState == ViewState.Place ) ||( view.currentState == ViewState.Story ) || ( view.currentState == ViewState.Theme )) {
 			view.stories.resetStories();
 		//}
-		if ( newState < this.minState ) {
-			wrappedState = this.maxState;
+		if ( newState < view.minState ) {
+			wrappedState = view.maxState;
 			view.currentState = wrappedState + ( newState + view.currentState );
 		} else {
 			wrappedState = newState;
 		}
-		//alert( 'current: ' + view.targetState + ' / new: ' + wrappedState + ' / action: zoom in  / zoom out btn: ' + $( '#zoom-controls' ).data( 'zoomOutBtn' ) );
+		//alert( 'current: ' + view.targetState + ' / new: ' + wrappedState + ' / min: ' + view.minState + ' / action: zoom in  / zoom out btn: ' + $( '#zoom-controls' ).data( 'zoomOutBtn' ) );
 
 		view.setState( wrappedState );
 		view.updateURL();
@@ -310,8 +301,8 @@ SurfacingView.prototype.incrementViewState = function( ) {
 	//if (( view.currentState == ViewState.Place ) ||( view.currentState == ViewState.Story ) || ( view.currentState == ViewState.Theme )) {
 		view.stories.resetStories();
 	//}
-	if ( newState > this.maxState ) {
-		wrappedState = this.minState;
+	if ( newState > view.maxState ) {
+		wrappedState = view.minState;
 		view.currentState = wrappedState - ( newState - view.currentState );
 	} else {
 		wrappedState = newState;
@@ -519,7 +510,7 @@ SurfacingView.prototype.update = function() {
 	if ( this.stories != null ) {
 		this.stories.update();
 	}
-	
+
 	switch ( this.targetState ) {
 	
 		case ViewState.Title:
@@ -990,10 +981,34 @@ function SurfacingStories() {
 	var color = d3.scale.category20();
 	
 	this.force = d3.layout.force()
-	    .chargeDistance( Math.max( this.canvasWidth, this.canvasHeight ) )
+	    /*.chargeDistance( Math.max( this.canvasWidth, this.canvasHeight ) )
 	    .charge( -400 )
-	    .linkDistance( 300 )
+	    .linkDistance( 300 )*/
 	    .friction( 0.5 )
+	    .gravity( 0 )
+	    //.charge( -400 )
+	    /*.charge( function( d ) {
+
+	    	switch ( d.type ) {
+
+	    		case "story":
+	    		return -350 * 4;
+	    		break;
+
+	    		case "theme":
+	    		return -400 * 4;
+	    		break;
+
+	    		case "image":
+	    		return -160 * 4;
+	    		break;
+
+	    		default:
+	    		return 0;
+	    		break;
+
+	    	}
+	    } )*/
 	    .size( [ this.canvasWidth, this.canvasHeight ] );
 
 	/*this.svg = d3.select( "body" ).append( "svg" )
@@ -1012,8 +1027,50 @@ function SurfacingStories() {
 	this.force.on( 'tick', function() {
 	
 		d3.selectAll( '.item' )
-			.style( 'left', function( d ) { return d.x+'px'; } )
-			.style( 'top', function( d ) { return d.y+'px'; } );
+			.style( 'left', function( d ) { 
+
+				var offset = 0;
+
+				switch ( d.type ) {
+
+					case "story":
+					offset = 175;
+					break;
+
+					case "theme":
+					offset = 200;
+					break;
+
+					case "image":
+					offset = 80;
+					break;
+
+				} 
+
+				return ( d.x - offset ) + 'px';
+			} )
+			.style( 'top', function( d ) { 
+
+				var offset = 0;
+
+				switch ( d.type ) {
+
+					case "story":
+					offset = 100;
+					break;
+
+					case "theme":
+					offset = 50;
+					break;
+
+					case "image":
+					offset = 50;
+					break;
+
+				} 
+				
+				return ( d.y - offset ) + 'px';
+			} );
 			
 		d3.selectAll( '.image-item' )
 			.style( 'opacity', function ( d ) {
@@ -1093,9 +1150,6 @@ function SurfacingStories() {
 	});
 	
 	this.items = [];
-				
-	// this is a temporary fix until FTP access is restored
-	//this.localThumbnails = ["1900MainLineSchematicMG4071.jpg", "Balikpapan_5426-2.jpg", "BaltimoreCableTankIMGL1255.jpg", "BaltimoreHomeportIMGL1180.jpg", "BaltimoreSplicingTableIMGL1143.jpg", "BaltimoreSupervisorySystemsIMGL1201.jpg", "BandjarmasinHarbor19081920compiled.jpg", "BanjoewangieInstrumentRoomImage054.jpg", "Belitung_10007213.jpg", "BoninIslandsIMG6994.jpg", "BroomeNativesIMG6364.jpg", "BusanCLS.jpg", "CapeStJamesStationIMGL2648.jpg", "CheratingStation.jpg", "ChikuraBeach.jpg", "ChikuraSign.jpg", "ChongmingRoad.jpg", "ChongmingWetlands.jpg", "ChumHongKokStationIMGL2200.jpg", "ColomboPostcard.jpg", "ColomboStreet1910.jpg", "ConDaoLandingIMGL2675.jpg", "ConDaoPrisonIMGL2739.jpg", "ConDaoPrisonIMGL2744.jpg", "DanangBridgeIMGL2425.jpg", "DanangCableStationIMGL2336.jpg", "DanangLandingPointIMGL2341.jpg", "DeepWaterBayStationInteriorIMGL2137.jpg", "DeepWaterBayViewIMGL2130.jpg", "EmiCoast.jpg", "FanningIslandAttackIMG6402.jpg", "FanningIslandEntry1926CableMapRelayIMG4176.jpg", "FoochowStationImage026.jpg", "FukuokaCityDestructionOctober1945.jpg", "HongKongStationIMGL2083.jpg", "HueLandingIMGL2481.jpg", "KeojeCableStation.jpg", "KitaibarakiEarthquakeDamage.jpg", "KitaibarakiLanding.jpg", "KitaibarakiMeditationRetreat.jpg", "KitakyushuJapan01s3SteelWorks.jpg", "LabuanMessVerandah1926image017.jpg", "LabuanTennisCourtimage018.jpg", "Macau-SS-1999.jpg", "MacauAirportIMGL2293.jpg", "MacauTelegraphLandingIMGL2238.jpg", "MadrasIndiaIOCOMFDC.jpg", "ManilaInstrumentRoomImage034.jpg", "MaruyamaRosemaryPark.jpg", "MaruyamaWindmill.jpg", "MatrixSingaporeLanding.jpg", "MauritiusCableLandingimage041.jpg", "MelakaTour.jpg", "MiuraBeach.jpg", "MiyazakiTower.jpg", "MogiNagasaki32921045.jpg", "NinomiyaHokusaiPrint.jpg", "PalauAirstrikeWWII1944.jpg", "PalauCableChartIMG5215.jpg", "PantaiMutiaraJakartastation.jpg", "PenangCableWarning.jpg", "PenangSingaporeCableBite.jpg", "PenangStaffQuarters1921image014.jpg", "PenangTerrestrialRouteIMG6566.jpg", "PerthInternationalTelecommunications.jpg", "PhetchaburiStation.jpg", "PiracyTestFiring.jpg", "QingdaoOlympics.jpg", "ReihokuCoalPlant73125048.jpg", "RodriguesOfficeImage043.jpg", "ShantouLanding.jpg", "ShimaBeach.jpg", "SihanoukvilleBeachIMGL2750.jpg", "SihanoukvillePortIMGL2795.jpg", "SingaporeCableDepotFactoryimage012.jpg", "SingaporeNauticalChartIMG5244.jpg", "SingaporeSeacomTerminalBuildingImage008.jpg", "SingaporeTennisParty1920image004.jpg", "SouthLantauBuildingIMGL1977.jpg", "SouthLantauLandingIMGL2046.jpg", "SouthLantauStationIMGL2034.jpg", "SouthLantauTempleIMGL2000.jpg", "Surabaya192030.jpg", "SuvaAucklandCableVoltageIMG6439.jpg", "TelegraphBayLandingIMGL2101.jpg", "TernateView1760.jpg", "TouchengHDD.jpg", "VungTauBeachIMGL2512.jpg", "VungTauStatueIMGL2585.jpg", "VungTauTowerIMGL2597.jpg", "WadaWhaleUtilization.jpg", "WeiHaiWeiScrapbookImage050.jpg", "WeiHaiWeiViewFromOfficeImage049.jpg", "YokohamaCustomHouse.jpg", "YokohamaEarthquake.jpg", "YokohamaWharf.jpg"];
 
 }
 
@@ -1283,7 +1337,7 @@ SurfacingStories.prototype.update = function() {
 		this.force.nodes( this.items )
 			.links( this.links )
 			.linkDistance( 300 )
-			.linkStrength( 0.5 )
+			.linkStrength( 0.2 )
 			.start();
 
 		this.nodeElements = this.canvas.selectAll( '.item' ).data( this.items, function( d ) { return d.node.slug; } );
@@ -1352,7 +1406,6 @@ SurfacingStories.prototype.update = function() {
 					view.setState( ViewState.Story );
 					var images = d.node.getRelatedNodes( 'annotation', 'outgoing' );
 					if ( images.indexOf( view.currentImage ) == -1 ) {
-						console.log( images );
 						view.selectImage( images[ Math.floor( Math.random() * images.length ) ] );
 					}
 					view.currentTheme = null;
@@ -1703,12 +1756,7 @@ SurfacingStories.prototype.updateStories = function() {
 		.html( function( d, i ) {
 			var content = '',
 				temp = d.node.current.sourceFile.split( 'media/' );
-				// this is a temporary fix until FTP access is restored
-				/*if ( view.stories.localThumbnails.indexOf( temp[ temp.length - 1 ] ) != -1 ) {
-					url = "thumbnails/" + temp[ temp.length - 1 ];
-				} else {*/
-					url = temp.join( 'media/thumbnails/' ); // this is how we should be doing it
-				//}
+				url = temp.join( 'media/thumbnails/' );
 				imageItemIndex = view.stories.imageItems.indexOf( d ),
 				storyItemIndex = view.stories.storyItems.indexOf( d.parent );
 			content += '<a href="javascript:view.stories.handleImageClick(\'' + d.parentNode.slug + '\', ' + imageItemIndex + ', ' + storyItemIndex + ');"><img src="' + url + '"/></a>';
@@ -1949,10 +1997,12 @@ function SurfacingVisualization() {
 	}; 
 
 	this.landOpacityKeyframes = [
+		{ key: 5.0, value: 0.0 },
 		{ key: 4.5, value: 0.0 },
 		{ key: 4.0, value: 1.0 },
 		{ key: 3.0, value: 1.0 },
-		{ key: 2.5, value: 0.0 }
+		{ key: 2.5, value: 0.0 },
+		{ key: 1.0, value: 0.0 }
 	];
 
 	this.thumbnailScaleKeyframes = [
@@ -1973,8 +2023,6 @@ function SurfacingVisualization() {
 	this.projectionScaleKeyframes = [
 		{ key: 6.0, value: 30.0 },
 		{ key: 5.0, value: 2.5 },
-		/*{ key: 4.51, value: 1.0 },
-		{ key: 4.5, value: 60.0 },*/
 		{ key: 4.0, value: 3.5 },
 		{ key: 3.0, value: 60.0 },
 		{ key: 2.0, value: 70.0 },
@@ -1985,94 +2033,8 @@ function SurfacingVisualization() {
 	this.projections = {};
 	this.nearestPlaceCables = [];
 	this.nearestPlaceCablePlaces = [];
-	
-	/*this.projections.aitoff = d3.geo.aitoff();
-	this.projections.august = d3.geo.august();
-	this.projections.azimuthalequalarea = d3.geo.azimuthalEqualArea();
-	this.projections.azimuthalequidistant = d3.geo.azimuthalEquidistant();
-	this.projections.baker = d3.geo.baker();
-	this.projections.boggs = d3.geo.boggs();
-	this.projections.bonne = d3.geo.bonne();
-	this.projections.bromley = d3.geo.bromley();
-	this.projections.collignon = d3.geo.collignon();
-	this.projections.conicconformal = d3.geo.conicConformal();
-	this.projections.conicequalarea = d3.geo.conicEqualArea();
-	this.projections.conicequidistant = d3.geo.conicEquidistant();
-	this.projections.craster = d3.geo.craster();
-	this.projections.cylindricalStereographic = d3.geo.fahey();
-	this.projections.cylindricalEqualArea = d3.geo.cylindricalEqualArea();
-	this.projections.eckert1 = d3.geo.eckert1();
-	this.projections.eckert1 = d3.geo.eckert1();
-	this.projections.eckert2 = d3.geo.eckert2();
-	this.projections.eckert3 = d3.geo.eckert3();
-	this.projections.eckert4 = d3.geo.eckert4();
-	this.projections.eckert5 = d3.geo.eckert5();
-	this.projections.eckert6 = d3.geo.eckert6();
-	this.projections.eisenlohr = d3.geo.eisenlohr();
-	this.projections.equirectangular = d3.geo.equirectangular();
-	this.projections.fahey = d3.geo.fahey();
-	this.projections.homolosine = d3.geo.homolosine();
-	this.projections.ginzburg4 = d3.geo.ginzburg4();
-	this.projections.ginzburg5 = d3.geo.ginzburg5();
-	this.projections.ginzburg6 = d3.geo.ginzburg6();
-	this.projections.ginzburg8 = d3.geo.ginzburg8();
-	this.projections.ginzburg9 = d3.geo.ginzburg9();
-	this.projections.gringorten = d3.geo.gringorten();
-	this.projections.gnomonic = d3.geo.gnomonic();
-	this.projections.guyou = d3.geo.guyou();
-	this.projections.hammer = d3.geo.hammer();
-	this.projections.hill = d3.geo.hill();
-	this.projections.kavrayskiy7 = d3.geo.kavrayskiy7();
-	this.projections.lagrange = d3.geo.lagrange();
-	this.projections.larrivee = d3.geo.larrivee();
-	this.projections.laskowski = d3.geo.laskowski();
-	this.projections.loximuthal = d3.geo.loximuthal();
-	this.projections.mercator = d3.geo.mercator();
-	this.projections.miller = d3.geo.miller();
-	this.projections.mtFlatPolarParabolic = d3.geo.mtFlatPolarParabolic();
-	this.projections.mtFlatPolarQuartic = d3.geo.mtFlatPolarQuartic();
-	this.projections.mtFlatPolarSinusoidal = d3.geo.mtFlatPolarSinusoidal();
-	this.projections.mollweide = d3.geo.mollweide();
-	this.projections.naturalEarth = d3.geo.naturalEarth();
-	this.projections.nellHammer = d3.geo.nellHammer();
-	this.projections.orthographic = d3.geo.orthographic();
-	this.projections.polyconic = d3.geo.polyconic();
-	this.projections.rectangularPolyconic = d3.geo.rectangularPolyconic();
-	this.projections.robinson = d3.geo.robinson();
-	this.projections.sinuMollweide = d3.geo.sinuMollweide();
-	this.projections.sinusoidal = d3.geo.sinusoidal();
-	this.projections.stereographic = d3.geo.stereographic();
-	this.projections.times = d3.geo.times();
-	this.projections.vanDerGrinten = d3.geo.vanDerGrinten();
-	this.projections.vanDerGrinten2 = d3.geo.vanDerGrinten2();
-	this.projections.vanDerGrinten3 = d3.geo.vanDerGrinten3();
-	this.projections.vanDerGrinten4 = d3.geo.vanDerGrinten4();
-	this.projections.wagner4 = d3.geo.wagner4();
-	this.projections.wagner6 = d3.geo.wagner6();
-	this.projections.wagner7 = d3.geo.wagner7();
-	this.projections.winkel3 = d3.geo.winkel3();
-	
-	this.projections.satellite = d3.geo.satellite()
-	    .distance(1.1)
-	    .scale(2500)
-	    .rotate([76.00, -34.50, 32.12])
-	    .center([-2, 5])
-	    .tilt(25)
-	    .clipAngle(Math.acos(1 / 1.1) * 180 / Math.PI - 1e-6)
-	    .precision(.1);*/
 	    
 	var ratio = window.devicePixelRatio || 1;
-
-	/*for ( var i in this.projections ) {
-		$( '#projection_select' ).append( '<option value="' + i + '">' + i + '</option>' );
-		if ( i != 'satellite' ) {
-			this.projections[ i ].scale(250) //450
-				.translate([this.canvasWidth / 2, this.canvasHeight / 2]);
-		}
-	}*/
-	    
-	/*this.currentProjection = view.stateData[ view.targetState ].projection
-		.translate([this.canvasWidth / 2, this.canvasHeight / 2]);*/
 		
 	this.currentProjection = d3.geo.projection(function(λ, φ) {
 			return view.stateData[ view.targetState ].projection([λ, -φ]);
@@ -2080,24 +2042,9 @@ function SurfacingVisualization() {
 		.translate([this.canvasWidth / 2, this.canvasHeight / 2]);
 	
 	this.targetRotation = this.currentProjection.rotate();
-	    
-	/*this.currentProjection = d3.geo.azimuthal()
-	    .scale(380)
-	    .origin([-71.03,42.37])
-	    .mode("orthographic")
-	    .translate([640, 400]);*/
 	
 	this.path = d3.geo.path()
 	    .projection(this.currentProjection);
-	
-	/*var λ = d3.scale.linear()
-	    .domain([0, this.canvasWidth])
-	    .range([-180, 180]);
-	
-	var φ = d3.scale.linear()
-	    .domain([0, this.canvasHeight])
-	    .range([90, -90]);*/
-
 
 	var drag = d3.behavior.drag()
 		.on("dragstart", function() {
@@ -2166,40 +2113,6 @@ SurfacingVisualization.prototype.setupPlaces = function() {
 	
 		place = me.filteredPlaces[ i ];
 		
-		o = place.images.length;
-		for ( j = 0; j < o; j++ ) {
-		
-			image = place.images[ j ];
-			
-			point = {
-				"type": "Point",
-				"coordinates": [ place.longitude + image.angleOffset[ 0 ], place.latitude + image.angleOffset[ 1 ] ],
-				'image': image
-			};
-			
-			temp = image.current.sourceFile.split( 'media' );
-			url = temp.join( 'media/thumbnails' );
-			
-			/*this.svg.append( 'image' )
-				.datum( point )
-				.attr( 'xlink:href', url )
-				.attr( 'width', 40 )
-				.attr( 'height', 30 )
-				.attr( 'x', function( d ) { return me.path.projection()( d.coordinates )[0] - 20; } )
-				.attr( 'y', function( d ) { return me.path.projection()( d.coordinates )[1] - 15; } )
-				.on( 'click', function( d ) { 
-					if ( view.localCablePlaces.indexOf( d.image.places[ 0 ] ) != -1 ) {
-						view.selectImage( d.image );
-					}
-					/*me.currentImage = d.image;
-					$( '#background' ).css( 'background-image', 'url(' + me.currentImage.current.sourceFile + ')' );
-					if ( view.targetState != ViewState.Place ) {
-						me.rotateTo( d.coordinates, ViewState.Place );
-					}*
-				} );*/
-			
-		}
-		
 		// arc generator
 		this.arcs = d3.svg.arc()
 			.startAngle(function(d) { return ( d.theme == view.currentTheme ) ? 0 : model.places.indexOf( d.place ) * ( Math.PI * .2 ); })
@@ -2231,21 +2144,6 @@ SurfacingVisualization.prototype.setupPlaces = function() {
 					}
 				} );
 		}
-			
-		/*for ( j = 0; j < o; j++ ) {
-			theme = place.themes[ j ];
-			this.svg.append("circle")
-				.datum( { place: place, theme: theme } )
-				.attr( 'cx', function( d ) { return me.path.projection()( [ d.place.longitude, d.place.latitude ] )[0]; } )
-				.attr( 'cy', function( d ) { return me.path.projection()( [ d.place.longitude, d.place.latitude ] )[1]; } )
-				.attr("class", "theme-ring")
-				.attr("r", function ( d ) {
-					return ( j + 1 ) * 10;
-				} )
-				.attr( 'stroke', function( d ) {
-					return me.themeColors( model.themes.indexOf( d.theme ) );
-				} );
-		}*/
 		
 		this.svg.append("circle")
 			.datum( place )
@@ -2463,44 +2361,6 @@ SurfacingVisualization.prototype.setupThemes = function() {
 
 }
 
-/*SurfacingVisualization.prototype.pathTween = function( projection0, projection1, rotate ) {
-	var me = this;
-	projection0.rotate([0, 0, 0]);
-	projection1.rotate([0, 0, 0]);
-	var t = 0,
-		projection = d3.geo.projection(function(λ, φ) {
-			λ *= 180 / Math.PI, φ *= 180 / Math.PI;
-			var p0 = projection0([λ, φ]), p1 = projection1([λ, φ]);
-			return [(1 - t) * p0[0] + t * p1[0], (1 - t) * -p0[1] + t * -p1[1]];
-		})
-			.rotate(rotate)
-			.scale(1)
-			.translate([this.canvasWidth / 2, this.canvasHeight / 2])
-			.clipAngle( projection0.clipAngle() ),
-		path = d3.geo.path().projection(projection);
-	return function() {
-		return function(u) {
-			t = u;
-			me.redraw(path);
-		};
-	};
-}
-
-SurfacingVisualization.prototype.updateProjection = function( proj ) {
-	console.log( 'do it' );
-	var me = this,
-		rotation = me.currentProjection.rotate();
-	this.svg.transition()
-		.duration(750)
-		.attrTween( 'path', this.pathTween( this.currentProjection, this.currentProjection = proj, rotation ) )
-		.each( 'end', function() {
-			me.currentProjection.clipAngle( proj.clipAngle() );
-			me.currentProjection.rotate( rotation );
-			me.redraw( me.path );
-		});
-	this.path.projection( this.currentProjection );
-}*/
-
 SurfacingVisualization.prototype.findNearestPlace = function( ) {
 
 	var centerPos = this.path.projection().rotate();
@@ -2577,89 +2437,38 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 			}*/
 		}	
 		
-		if ( !model.muteMap /*&& ( view.targetState != ViewState.Story )*/ ) {
+		if ( !model.muteMap ) {
 
-			this.svg.selectAll( 'path' )
-				.attr( 'd', path );
+			if (( view.targetState == ViewState.Map ) || ( view.targetState == ViewState.Place ) || ( view.targetState == ViewState.Theme )) {
+				this.svg.selectAll( '.land' )
+					.attr( 'd', path );
+			}
+
+			if (( view.targetState == ViewState.Theme ) || ( view.targetState == ViewState.Story )) {
+				this.svg.selectAll( '.theme' )
+					.attr( 'd', path );
+			}
+
+			if (( view.targetState == ViewState.Cable ) || ( view.targetState == ViewState.Map ) || ( view.targetState == ViewState.Place )) {
+				this.svg.selectAll( '.cable' )
+					.attr( 'd', path );
+			}
 
 		}
-			
-		var landOpacity = interpolateKeyframes( this.landOpacityKeyframes, view.currentState );
+		
+		var landOpacity;
+		if ((( view.lastState == ViewState.Theme ) && ( view.targetState == ViewState.Story )) || (( view.lastState == ViewState.Story ) && ( view.targetState == ViewState.Theme ))) {
+			landOpacity = 0;
+		} else {
+			landOpacity = interpolateKeyframes( this.landOpacityKeyframes, view.currentState );
+		}
+
 		var thumbnailScale = interpolateKeyframes( this.thumbnailScaleKeyframes, view.currentState );
 		var landDisplay = ( landOpacity < .05 ) ? 'none' : 'inline';
 		this.svg.selectAll( '.land' )
 			.attr( 'opacity', landOpacity )
 			.attr( 'display', landDisplay );
-
-	    /*this.svg.selectAll( 'image' )
-	    	.attr( 'xlink:href', function( d ) { 
-	    		/*if ( me.currentImage == d.image ) {
-	    			return d.image.current.sourceFile;
-	    		} else {*
-		 			temp = d.image.current.sourceFile.split( 'media' );
-					return temp.join( 'media/thumbnails' );
-	   			//};
-	    	})
-	    	.attr( 'x', function( d ) { 
-	    		//if ( me.currentImage != d.image ) {
-	   				return path.projection()( d.coordinates )[0] - ( this.width.baseVal.value * .5 );
-	   			/*} else {
-	   				return interpolate( this.x.baseVal.value, 20, .3 );
-	   			}*
-	    	} )
-	    	.attr( 'y', function( d ) { 
-	     		//if ( me.currentImage != d.image ) {
-	  				return path.projection()( d.coordinates )[1] - ( this.height.baseVal.value * .5 );
-	   			/*} else {
-	   				return interpolate( this.y.baseVal.value, 20, .3 );
-	   			}*
-	    	} )
-	    	.attr( 'width', function( d ) { 
-	    		/*var target = ( me.currentImage == d.image ) ? 800 : 40;
-	    		return interpolate( this.width.baseVal.value, target, .3 );*
-	    		//return 40;
-	     		var dist = arc.distance( { source: d.coordinates, target: centerPos } );
-	    		//dist = Math.pow( dist, 2 );
-				return ( 80 * ( 1.0 - ( Math.min( dist, 1.57 ) / 1.57 ) ) ) * thumbnailScale;	   	
-	  		} )
-	    	/*.attr( 'height', function( d ) { 
-	    		/*var target = ( me.currentImage == d.image ) ? 500 : 25;
-	     		return interpolate( this.height.baseVal.value, target, .3 );
-	     		return 25;
-		   	} )
-		   	.style( 'opacity', function( d ) {
-	    		var dist = arc.distance( { source: d.coordinates, target: centerPos } );
-	    		dist = Math.pow( dist, 2 );
-				return 1.0 - ( Math.min( dist, 1.57 ) / 1.57 );	   	
-		   	} )*/
-			/*.attr( 'opacity', landOpacity )*
-			.attr( 'display', function( d ) {
-				return ( ( view.localCablePlaces.indexOf( d.image.places[ 0 ] ) != -1 ) && ( landDisplay == 'inline' ) ) ? 'inline' : 'none';
-			} );
-	    	/*.style( 'display', function( d ) {
-	    		var dist = arc.distance( { source: d.coordinates, target: centerPos } );
-	    		return ( ( dist > 1.57 ) || !$( '#image_control' )[0].checked || ( view.targetState == ViewState.Image ) || ( view.targetState == ViewState.Theme ) ) ? 'none' : 'inline';
-	    	} )*;*/
-			
-		/*var themeOpacity, themeDisplay;
-		if ( view.currentState > 4.5 ) {
-			themeOpacity = ( 5 - view.currentState ) / .5;
-			themeDisplay = 'inline';
-		} else if ( view.currentState > 1.5 ) {
-			themeOpacity = 0
-			themeDisplay = 'inline';
-		} else if ( view.currentState > .5 ) {
-			landOpacity = ( Math.abs ( view.currentState - 1 ) / .5 );
-			landDisplay = 'inline';
-		} else if ( view.currentState > 2.5 ) {
-			landOpacity = ( view.currentState - 2.5 ) / .5;
-			landDisplay = 'inline';
-		} else {
-			landOpacity = 0;
-			landDisplay = 'none';
-		}*/
 	    	
-		//if ( !model.muteMap ) {
 		if ( !model.muteThemes ) {
 			var themeOpacity = interpolateKeyframes( this.themeOpacityKeyframes, view.currentState );
 			var themeDisplay = ( themeOpacity < .05 ) ? 'none' : 'inline';
@@ -2671,7 +2480,6 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 				.style( 'display', themeDisplay )
 				.style( 'opacity', themeOpacity );
 		}
-		//}
 			
 		this.svg.selectAll( '.place' )
 			.style( 'fill', function( d ) { return ( d == view.currentPlace ) ? 'white' : 'black'; } ) // color was #ad325e
@@ -2711,18 +2519,7 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 			.attr( 'transform', function( d ) { return 'translate(' + me.path.projection()( [ d.place.longitude, d.place.latitude ] )[0] + ',' + me.path.projection()( [ d.place.longitude, d.place.latitude ] )[1] + ')'; } )
 			.style( 'display', function( d ) { return ( view.targetState == ViewState.Theme ) ? (( view.currentTheme == d.theme ) || (( view.currentPlace == d.place )) ? 'inline' : 'none' ) : 'none'; } );
 			
-		/*this.svg.selectAll( '.theme-ring' )
-			.style( 'stroke', function( d ) { 
-				return view.visualization.themeColors( model.themes.indexOf( d.theme ) ); 
-			} )
-			.attr( 'cx', function( d ) { return path.projection()( [ d.place.longitude, d.place.latitude ] )[0]; } )
-			.attr( 'cy', function( d ) { return path.projection()( [ d.place.longitude, d.place.latitude ] )[1]; } )
-			.style( 'display', function( d ) { return ( view.targetState == ViewState.Theme ) ? 'inline' : 'none'; } );*/
-			
 		this.svg.selectAll( '.cable' )
-			/*.style( 'stroke', function( d ) { 
-				return ( view.visualization.nearestPlaceCables.indexOf( d.cable ) != -1 ) ? 'white' : '#ad325e'; 
-			} );*/
 			.style( 'stroke-width', function( d ) {
 				if ( view.currentState > 4 ) {
 					return 1;
@@ -2752,11 +2549,6 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 				} else {
 					return ( 1 - ( view.currentState - ViewState.Image ) ) * 10 + 11;
 				}
-				/*if ( ( view.currentState >= ViewState.Place ) && ( view.currentState <= ViewState.Map ) ) {
-					return ( 1 - ( view.currentState - ViewState.Place ) ) * 10 + 1;
-				} else {
-					return 1;
-				}*/
 			} )
 			.style( 'display', function( d ) { 
 				return ( view.localCables.indexOf( d.cable ) != -1 ) ? 'inline' : 'none'; 

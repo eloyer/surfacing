@@ -13,6 +13,7 @@ var model = new SurfacingModel();
  */
 function SurfacingModel() {
 
+	// for debugging purposes
 	this.muteViz = false;
 	this.muteMap = false;
 	this.muteThemes = false;

@@ -60,7 +60,7 @@ body {
 	top: 20px;
 	width: 200px;
 	z-index: 99;
-	background-color: rgba( 0, 0, 0, 0.5 );
+	background-color: rgba( 0, 0, 0, 0.7 );
 	color: white;
 	padding: 10px;
 	border: 1px solid gray;
@@ -74,7 +74,7 @@ body {
 	z-index: 99;
 	display: none;
 	text-align: center;
-	color: #b8b8b8;
+	color: white;
 	text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 );
 }
 #zoom-controls div:first-child { margin-bottom: 10px; cursor: default; }
@@ -83,7 +83,7 @@ body {
 
 #chips {
 	position: absolute;
-	width: 450px;
+	max-width: 450px;
 	max-height: 100%;
 	top: 10px;
 	left: 10px;
@@ -111,7 +111,7 @@ body {
 	margin-top: 50px;
 	width: 400px;
 	line-height: 140%;
-	background-color: rgba( 0, 0, 0, 0.5 ) !important;
+	background-color: rgba( 0, 0, 0, 0.7 ) !important;
 }
 .chip.place a { color: #aaa; }
 .chip.place h1 { font-size: 26px; margin-bottom: 12px; }
@@ -125,7 +125,7 @@ body {
 	padding: 10px 15px;
 	background: #eee;
 	max-width: 350px;
-	z-index: 98;
+	z-index: 97;
 	font-size: 16px;
 	line-height: 130%;
 }
@@ -138,9 +138,11 @@ body {
 	background-color: #ccc;
 }
 .story-item a { color: #666; }
-.theme-item { font-size: 56px; line-height: 120%; color: #555; }
+.theme-item { font-size: 56px; line-height: 100%; color: #555; text-align: center; width: 400px; }
 .image-item {
-	z-index : 99;
+	width: 164px;
+	height: 104px;
+	z-index : 98;
 	border: none;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* fix for leaving junk pixel trails - http://stackoverflow.com/questions/9983520/webkit-animation-is-leaving-junk-pixels-behind-on-the-screen */
 }
