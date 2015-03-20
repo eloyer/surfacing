@@ -19,17 +19,6 @@
 		
 			$(document).ready(function(){
 			
-				var i;
-				for ( i = 2015; i >= 1988; i-- ) {
-					$( '#year-2015' ).append( '<p class="year">' + i + '</p>' );
-				}
-				for ( i = 1987; i >= 1956; i-- ) {
-					$( '#year-1956' ).append( '<p class="year">' + i + '</p>' );
-				}
-				for ( i = 1955; i >= 1850; i-- ) {
-					$( '#year-1850' ).append( '<p class="year">' + i + '</p>' );
-				}
-			
 				view.init();
 				controller.init();
 			
@@ -46,34 +35,23 @@
 			<img id="bottom-zoom-btn" src="images/minus_btn_bottom.png" alt="Zoom out button" width="30" height="38" />
 			<div>&nbsp;<br>&nbsp;</div>
 		</div>
-       <div id="chips"></div>
+       	<div id="chips"></div>
         <div id="message-box"></div>
         <div id="splash-container">
 	        <div id="splash-box">
 	        	<h1>Surfacing</h1>
 	        	<p class="credits">by Nicole Starosielski, Erik Loyer, and Shane Brennan<br>Design and programming by Erik Loyer</p>
 	        	<p class="alert">This is a preview of Surfacing.<br>Full release is scheduled for March 20, 2015.</p>
-	        	<p>Undersea fiber-optic cables are critical infrastructures that support our global network society.</p> 
-				<p>They transport 99% of all transoceanic digital communications, including:<br>
-				phone calls,<br>
+
+				<p>Undersea fiber-optic cables are critical infrastructures that support our global network society. They carry 99% of all transoceanic digital communications, including:</p>
+				<p>phone calls,<br>
 				text messages,<br>
 				email,<br>
 				websites,<br>
 				digital images and video,<br>
-				and even some television.</p>
-				<p>It is submarine systems, rather than satellites, that carry most of the Internet across the oceans.</p>
-				<div id="year-2015"></div>
-				<p>Before this, there were undersea telephone cables</p>
-				<div id="year-1956"></div>
-				<p>And even before that, undersea telegraph cables.</p>
-				<div id="year-1850"></div>
-				<p>In Surfacing, you are a signal:<br>
-				a love note,<br>
-				a winning score,<br>
-				a credit card number,<br>
-				a cat video.</p>
-				<p>Like the billions of signals before and after, you are tasked to traverse the undersea network.</p> 
-				<p>You begin in Southern California, in the year 2015.</p>
+				and even some television.</P>
+				<p>It is cable systems, not satellites, that transport most of the Internet around the world.</p>
+				<p>In Surfacing, you are a signal traveling across the undersea network. You begin on the coast, carried ashore by undersea cable. From your landing point, you can traverse the Pacific Ocean by hopping between network nodes. You might surface at cable stations where signal traffic is monitored, on remote islands that were once network hubs, and aboard giant ships that lay submarine systems. In the process, narratives about the history of the cable network, the companies that construct it, and the ecologies that it runs through will orient you in your journey.</p>
 			</div>
 			<a class="button" href="javascript:;" onclick="javascript:view.hideSplash();">Start</a>
 			<div id="logo-box">
