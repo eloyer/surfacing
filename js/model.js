@@ -228,7 +228,7 @@ SurfacingModel.prototype.postProcessCables = function() {
 					node.children = [];
 				}
 				node.children.push( cable );
-				console.log( "Got cable group" );
+				//console.log( "Got cable group" );
 				cable.cableGroup = node;
 				cable.cableGroupSiblings = node.getRelatedNodes( 'tag', 'outgoing' );
 				break;

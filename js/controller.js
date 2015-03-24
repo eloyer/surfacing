@@ -93,7 +93,7 @@ SurfacingController.prototype.getImages = function() {
 
 SurfacingController.prototype.handleImages = function( results ) {
 
-	console.log( 'got images' );
+	//console.log( 'got images' );
 
 	model.images = [];
 	var node,
@@ -171,7 +171,7 @@ SurfacingController.prototype.getNextPlaceFile = function() {
 	//console.log( controller.placeFiles );
 
 	if ( controller.placeFileIndex < controller.placeFiles.length ) {
-		console.log( "get place file: " + controller.placeFiles[ controller.placeFileIndex ] );
+		//console.log( "get place file: " + controller.placeFiles[ controller.placeFileIndex ] );
 		$.ajax({
 			type: "GET",
 			url: "data/" + controller.placeFiles[ controller.placeFileIndex ] + ".json",
@@ -187,7 +187,7 @@ SurfacingController.prototype.getNextPlaceFile = function() {
 
 SurfacingController.prototype.handlePlaces = function() {
 
-	console.log( 'got places' );
+	//console.log( 'got places' );
 
 	model.places = [];
 	var placeTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'place' );
@@ -199,7 +199,7 @@ SurfacingController.prototype.handlePlaces = function() {
 		model.places = model.places.concat( placeTag.getRelatedNodes('tag', 'outgoing') );
 	}
 
-	console.log( "place count: " + model.places.length );
+	//console.log( "place count: " + model.places.length );
 
 	model.postProcessPlaces();
 	view.handleLoadCompleted( 'places' );
@@ -230,7 +230,7 @@ SurfacingController.prototype.getStartingPoints = function() {
 
 SurfacingController.prototype.handleStartingPoints = function() {
 
-	console.log( 'got starting points' );
+	//console.log( 'got starting points' );
 
 	model.startingPoints = [];
 	var startingPointTag = scalarapi.getNode( 'starting-point' );
@@ -267,7 +267,7 @@ SurfacingController.prototype.getStories = function() {
 
 SurfacingController.prototype.handleStories = function() {
 
-	console.log( 'got stories' );
+	//console.log( 'got stories' );
 
 	model.stories = [];
 	var storyTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'story' );
@@ -280,7 +280,7 @@ SurfacingController.prototype.handleStories = function() {
 	
 	model.postProcessImages();
 	
-	view.handleLoadCompleted();
+	view.handleLoadCompleted( 'stories' );
 	
 	controller.getStoryGroups();
 
@@ -291,7 +291,7 @@ SurfacingController.prototype.handleStories = function() {
  */
 SurfacingController.prototype.getStoryGroups = function() {
 
-	console.log( 'get story groups' );
+	//console.log( 'get story groups' );
 
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/story-group?rec=1&ref=0&format=json
 
@@ -316,7 +316,7 @@ SurfacingController.prototype.handleStoryGroups = function() {
 	model.storyGroups = [];
 	var storyGroupTag = scalarapi.getNode( scalarapi.model.urlPrefix + 'story-group' );
 	model.storyGroups = storyGroupTag.getRelatedNodes('tag', 'outgoing');
-	view.handleLoadCompleted();
+	view.handleLoadCompleted( 'story groups' );
 	
 	controller.getCableGroups();
 	
@@ -365,7 +365,7 @@ SurfacingController.prototype.getCables = function() {
 
 	//console.log( 'get cables' );
 
-	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable?rec=2&ref=0&format=json
+	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable?rec=2&ref=0&format=json // we aren't using this one anymore
 
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-0-49?rec=2&ref=0&format=json
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-50-99?rec=2&ref=0&format=json
@@ -397,7 +397,7 @@ SurfacingController.prototype.getNextCableFile = function() {
 	//console.log( controller.placeFiles );
 
 	if ( controller.cableFileIndex < controller.cableFiles.length ) {
-		console.log( "get cable file: " + controller.cableFiles[ controller.cableFileIndex ] );
+		//console.log( "get cable file: " + controller.cableFiles[ controller.cableFileIndex ] );
 		$.ajax({
 			type: "GET",
 			url: "data/" + controller.cableFiles[ controller.cableFileIndex ] + ".json",
@@ -423,7 +423,7 @@ SurfacingController.prototype.handleCables = function() {
 		model.cables = model.cables.concat( cableTag.getRelatedNodes( 'tag', 'outgoing' ) );
 	}
 
-	console.log( "cable count: " + model.cables.length );
+	//console.log( "cable count: " + model.cables.length );
 
 	/*
 	var cableTag = scalarapi.model.nodesByURL[scalarapi.model.urlPrefix+'cable'];

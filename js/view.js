@@ -17,6 +17,23 @@ function getUrlParameter(name) {
 		return results[1];
 	}    
 }
+
+// Source: http://rosettacode.org/wiki/Averages/Simple_moving_average#JavaScript
+function simple_moving_averager(period) {
+    var nums = [];
+    return function(num) {
+        nums.push(num);
+        if (nums.length > period)
+            nums.splice(0,1);  // remove the first element of the array
+        var sum = 0;
+        for (var i in nums)
+            sum += nums[i];
+        var n = period;
+        if (nums.length < period)
+            n = nums.length;
+        return(sum/n);
+    }
+}
  
 // Possible macro states of the view
 var ViewState = {
@@ -138,6 +155,7 @@ function SurfacingView() {
 	this.relatedNodes = [];
 	this.initialized = false;
 	this.launchContentRestored = false;
+	this.averager = simple_moving_averager( 30 );
 	
 	this.stateData[ ViewState.Theme ] = {
 		projection: d3.geo.mercator().clipAngle( 90 )
@@ -190,6 +208,7 @@ SurfacingView.prototype.currentCable = null;
 SurfacingView.prototype.initialized = null;
 SurfacingView.prototype.launchContentRestored = null;
 SurfacingView.prototype.hasBeenDragged = null;
+SurfacingView.prototype.averager = null;
 
 SurfacingView.prototype.init = function() {
 
@@ -240,6 +259,18 @@ SurfacingView.prototype.perFrame = function( type ) {
 	var currentTime = new Date().getTime();
 	view.timeSinceLastFrame = currentTime - view.lastFrame;
 	view.currentState += ( view.targetState - view.currentState ) * ( .1 /** ( view.timeSinceLastFrame * .001 )*/ );
+
+	var averageTimeSinceLastFrame = view.averager( view.timeSinceLastFrame );
+
+	//view.log( averageTimeSinceLastFrame, true );
+
+	if ( averageTimeSinceLastFrame > 150 ) {
+		model.muteThemes = true;
+		model.muteMap = true;
+	} else if ( averageTimeSinceLastFrame < 50 ) {
+		model.muteThemes = false;
+		model.muteMap = false;
+	}
 	
 	view.lowState = view.wrapState( Math.floor( view.currentState ) );
 	view.highState = view.wrapState( Math.ceil( view.currentState ) );
@@ -319,12 +350,28 @@ SurfacingView.prototype.handleLoadCompleted = function( type ) {
 	switch ( type ) {
 	
 		case 'places':
+		$( ".progress-bar" ).css( "width", "16%" );
+		break;
+
+		case 'starting points':
+		$( ".progress-bar" ).css( "width", "32%" );
+		break;
+
+		case 'stories':
+		$( ".progress-bar" ).css( "width", "48%" );
+		break;
+
+		case 'story groups':
+		$( ".progress-bar" ).css( "width", "64%" );
 		break;
 	
 		case 'cables':
+		$( ".progress-bar" ).css( "width", "80%" );
 		break;
 		
 		case 'themes':
+		$( "#load-progress" ).css( "display", "none" );
+
 		this.initialized = true;
 		this.visualization.setupThemes();
 		this.visualization.setupCables();
@@ -332,33 +379,17 @@ SurfacingView.prototype.handleLoadCompleted = function( type ) {
 		this.perFrame();
 		this.visualization.perFrame( true );
 		
-		//view.log( 'load completed' );
-		
-		/*var place;
-		do {
-			place = model.nonBranchPlaces[ Math.floor( Math.random() * model.nonBranchPlaces.length ) ];
-		} while ( nonBranchPlaces.images.length == 0 );*/
-		
-		//view.log( 'random place: ' + place.getDisplayTitle() + ' with ' + place.images.length + ' images' );
-		
-		/*do {
-			this.selectImage( place.images[ Math.floor( Math.random() * place.images.length ) ] );
-		} while ( this.currentImage.stories == null );*/
-		
 		this.stories = new SurfacingStories();
 		
 		if ( !this.restoreContentFromURL() ) {
-			//this.selectImage( scalarapi.getNode( 'media/makaha-manhole' ) );
-			//this.selectImage( scalarapi.getNode( 'media/sumay-cable-station-plans' ) );
-			//this.selectImage( scalarapi.getNode( 'media/bamfield-marine-sciences-center' ) );
-			//this.selectImage( scalarapi.getNode( 'media/sans-souci-celebration' ) );
 			this.selectImage( model.startingPoints[ Math.floor( Math.random() * model.startingPoints.length ) ] );
 			view.updateURL();
+			$( "#start-button" ).css( "display", "inline" );
 		} else {
 			this.hideSplash();
 			this.update();
 		}
-		
+
 		break;
 		
 	}
@@ -737,7 +768,7 @@ SurfacingView.prototype.setImageAsBackground = function( image ) {
 
 SurfacingView.prototype.selectPlace = function( place ) {
 
-	console.log( 'selectPlace ' + place.getDisplayTitle() );
+	//console.log( 'selectPlace ' + place.getDisplayTitle() );
 
 	view.currentPlace = place;
 	view.currentImage = place.images[ Math.floor( Math.random() * place.images.length ) ];
@@ -1987,6 +2018,7 @@ function SurfacingVisualization() {
 
 	this.canvasWidth = window.innerWidth;
 	this.canvasHeight = window.innerHeight;
+	this.lastThemeDrawTime = this.lastMapDrawTime = new Date().getTime();
 	
 	this.scale = {
 		orthographic: 380,
@@ -2102,6 +2134,8 @@ SurfacingVisualization.prototype.renderedThisFrame = null;
 SurfacingVisualization.prototype.themeColors = null;
 SurfacingVisualization.prototype.landOpacityKeyframes = null;
 SurfacingVisualization.prototype.projectionScaleKeyframes = null;
+SurfacingVisualization.prototype.lastMapDrawTime = null;
+SurfacingVisualization.prototype.lastThemeDrawTime = null;
 
 SurfacingVisualization.prototype.setupPlaces = function() {
 
@@ -2340,7 +2374,11 @@ SurfacingVisualization.prototype.setupThemes = function() {
 				}
 			})
 			.attr( 'd', function( d, i ) { 
-				return "M" + d.join("L") + "Z"; 
+				if ( d.join("L") != "" ) {
+					return "M" + d.join("L") + "Z"; 
+				} else {
+					return "";
+				}
 			} );
 
 	}
@@ -2419,7 +2457,10 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 
 	var me = this;
 	var centerPos = path.projection().rotate();
-		arc = d3.geo.greatArc();
+		arc = d3.geo.greatArc(),
+		now = new Date().getTime(),
+		timeSinceLastMapDraw = now - this.lastMapDrawTime,
+		timeSinceLastThemeDraw = now - this.lastThemeDrawTime;
 	
 	if ( !me.renderedThisFrame ) {
 	
@@ -2437,7 +2478,7 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 			}*/
 		}	
 		
-		if ( !model.muteMap ) {
+		if ( !model.muteMap || ( model.muteMap && ( timeSinceLastMapDraw > 1000 )) ) {
 
 			if (( view.targetState == ViewState.Map ) || ( view.targetState == ViewState.Place ) || ( view.targetState == ViewState.Theme )) {
 				this.svg.selectAll( '.land' )
@@ -2454,6 +2495,7 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 					.attr( 'd', path );
 			}
 
+			this.lastMapDrawTime = now;
 		}
 		
 		var landOpacity;
@@ -2464,21 +2506,31 @@ SurfacingVisualization.prototype.redraw = function( path, smooth ) {
 		}
 
 		var thumbnailScale = interpolateKeyframes( this.thumbnailScaleKeyframes, view.currentState );
-		var landDisplay = ( landOpacity < .05 ) ? 'none' : 'inline';
+		var landDisplay = (( landOpacity < .05 ) || model.muteMap ) ? 'none' : 'inline';
 		this.svg.selectAll( '.land' )
 			.attr( 'opacity', landOpacity )
 			.attr( 'display', landDisplay );
 	    	
-		if ( !model.muteThemes ) {
+		if ( !model.muteThemes || ( model.muteThemes && ( timeSinceLastThemeDraw > 1000 )) ) {
 			var themeOpacity = interpolateKeyframes( this.themeOpacityKeyframes, view.currentState );
 			var themeDisplay = ( themeOpacity < .05 ) ? 'none' : 'inline';
 			this.themeVoronoi.x( function( d ) { return path.projection()( [ d.longitude, d.latitude ] )[ 0 ]; } )
 				.y( function( d ) { return path.projection()( [ d.longitude, d.latitude ] )[ 1 ]; } );
 			this.themePaths.data( this.themeVoronoi( this.filteredPlaces ) );
 			this.themePaths
-				.attr( 'd', function( d ) { return "M" + d.join("L") + "Z"; } )
+				.attr( 'd', function( d ) { 
+					if ( d.join("L") != "" ) {
+						return "M" + d.join("L") + "Z"; 
+					} else {
+						return "";
+					}
+				} )
 				.style( 'display', themeDisplay )
 				.style( 'opacity', themeOpacity );
+			this.lastThemeDrawTime = now;
+		} else {
+			//this.themePaths
+				//.style( 'display', 'none' );
 		}
 			
 		this.svg.selectAll( '.place' )
@@ -2960,7 +3012,7 @@ SurfacingVisualization.prototype.update = function() {
 			if ( view.targetState == ViewState.Image ) {
 				return '300px';
 			} else {
-				return '600px';
+				return ( window.innerHeight - 100 ) + 'px';
 			}
 		} );
 			
