@@ -873,7 +873,9 @@ SurfacingView.prototype.getRelatedNodes = function() {
 		break;
 		
 		case ViewState.Place:
-		this.relatedNodes.push( this.currentPlace );
+		if ( this.currentPlace != null ) {
+			this.relatedNodes.push( this.currentPlace );
+		}
 		this.currentTheme = null;
 		break;
 		

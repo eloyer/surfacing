@@ -72,7 +72,7 @@ SurfacingModel.prototype.postProcessPlaces = function() {
 				if ( isNaN( place.latitude ) || isNaN( place.longitude ) ) {
 					place.latitude = 30;
 					place.longitude = 30;
-					console.log( place.getDisplayTitle() );
+					//console.log( place.getDisplayTitle() );
 				}
 				if (place.longitude >= 0) {
 					place.posLongitude = place.longitude;
@@ -173,6 +173,7 @@ SurfacingModel.prototype.postProcessImages = function() {
 	for ( i = 0; i < n; i++ ) {
 		image = this.images[ i ];
 		image.stories = [];
+		//image.places = [];
 		nodes = image.getRelatedNodes( 'annotation', 'incoming' );
 		o = nodes.length;
 		for ( j = 0; j < o; j++ ) {

@@ -55,6 +55,10 @@ body {
 	display: none;
 }
 
+#feedback { position: absolute; right: 20px; bottom: 20px; text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.5 ); color: white; z-index: 1050; }
+#feedback a { color: white; text-decoration: none; }
+#feedback a:hover { text-decoration: underline; }
+
 #start-button { display: none; }
 
 #load-progress { 
