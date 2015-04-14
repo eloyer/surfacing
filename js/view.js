@@ -3030,8 +3030,14 @@ SurfacingVisualization.prototype.update = function() {
 			
 		} )
 		.transition().duration( 500 ).style( 'max-height', function( d ) {
-			if (( view.targetState == ViewState.Image ) || ( window.innerWidth < 520 )) {
-				return '300px';
+			var maxHeight;
+			if ( window.innerHeight < 600 ) {
+				maxHeight = 200;
+			} else {
+				maxHeight = 300;
+			}
+			if (( view.targetState == ViewState.Image ) || ( window.innerWidth < 950 )) {
+				return maxHeight + 'px';
 			} else {
 				return ( window.innerHeight - 100 ) + 'px';
 			}

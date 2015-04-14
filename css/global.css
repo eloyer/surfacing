@@ -1,3 +1,13 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
 /* map styles */
 
 .land { stroke-width: 1px; stroke: cyan; fill: rgba( 0, 0, 0, 0.25 ); }
@@ -265,5 +275,15 @@ body {
 	#splash-box { width: 90%; margin-left: -45%; }
 	#help { display: none; }
 	#zoom-controls { right: 10px; top: 10px; }
-	.chip.place { margin-left: 0; margin-top: 0; }
+	.chip { width: 150px; }
+	.chip.place { margin-left: 0; margin-top: 0; width: 60%; font-size: 13px; padding: 10px 15px; }
+	.chip.place h1 { font-size: 13px; }
+	#load-progress { width: 90%; margin-left: -45%; }
+}
+
+@media ( max-width:950px ) {
+	#help { display: none; }
+	#zoom-controls { right: 10px; top: 10px; }
+	.chip.place { margin-left: 0; margin-top: 0; width: 60%; font-size: 13px; padding: 10px 15px; }
+	.chip.place h1 { font-size: 13px; }
 }
