@@ -185,6 +185,12 @@ function SurfacingView() {
 		}
 	});
 
+	var timeout;
+	$(window).resize( function() {
+		clearTimeout( timeout );
+		timeout = setTimeout( me.handleDelayedResize, 100 );
+	});
+
 }
 
 SurfacingView.prototype.currentState = null;
@@ -252,6 +258,10 @@ SurfacingView.prototype.wrapState = function( state ) {
 	}
 	
 	return state;
+}
+
+SurfacingView.prototype.handleDelayedResize = function() {
+	view.visualization.resize( window.innerWidth, window.innerHeight );
 }
 
 SurfacingView.prototype.perFrame = function( type ) {
@@ -2138,6 +2148,14 @@ SurfacingVisualization.prototype.landOpacityKeyframes = null;
 SurfacingVisualization.prototype.projectionScaleKeyframes = null;
 SurfacingVisualization.prototype.lastMapDrawTime = null;
 SurfacingVisualization.prototype.lastThemeDrawTime = null;
+
+SurfacingVisualization.prototype.resize = function( w, h ) {
+
+	this.canvasWidth = w;
+	this.canvasHeight = h;
+	this.svg.attr( "width", this.canvasWidth ).attr( "height", this.canvasHeight );
+
+}
 
 SurfacingVisualization.prototype.setupPlaces = function() {
 
