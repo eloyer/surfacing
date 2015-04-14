@@ -148,7 +148,7 @@ body {
 	padding: 10px 15px;
 	background: #eee;
 	max-width: 350px;
-	z-index: 97;
+	z-index: 98;
 	font-size: 16px;
 	line-height: 130%;
 }
@@ -167,7 +167,7 @@ body {
 .image-item {
 	width: 164px;
 	height: 104px;
-	z-index : 98;
+	z-index : 97;
 	border: none;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.05); /* fix for leaving junk pixel trails - http://stackoverflow.com/questions/9983520/webkit-animation-is-leaving-junk-pixels-behind-on-the-screen */
 }
