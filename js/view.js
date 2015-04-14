@@ -2154,6 +2154,7 @@ SurfacingVisualization.prototype.resize = function( w, h ) {
 	this.canvasWidth = w;
 	this.canvasHeight = h;
 	this.svg.attr( "width", this.canvasWidth ).attr( "height", this.canvasHeight );
+	this.themeVoronoi.clipExtent( [ [ 0, 0 ], [ this.canvasWidth, this.canvasHeight ] ] );
 
 }
 
@@ -3029,7 +3030,7 @@ SurfacingVisualization.prototype.update = function() {
 			
 		} )
 		.transition().duration( 500 ).style( 'max-height', function( d ) {
-			if ( view.targetState == ViewState.Image ) {
+			if (( view.targetState == ViewState.Image ) || ( window.innerWidth < 520 )) {
 				return '300px';
 			} else {
 				return ( window.innerHeight - 100 ) + 'px';

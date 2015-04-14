@@ -260,3 +260,10 @@ body {
 	color: white;
 	margin-bottom: 0;
 }
+
+@media ( max-width:520px ) {
+	#splash-box { width: 90%; margin-left: -45%; }
+	#help { display: none; }
+	#zoom-controls { right: 10px; top: 10px; }
+	.chip.place { margin-left: 0; margin-top: 0; }
+}
