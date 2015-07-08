@@ -22,7 +22,8 @@ function SurfacingController() {
 		"place-300-599",
 		"place-600-899",
 		"place-900-1199",
-		"place-1200-1499"
+		"place-1200-1499",
+		"place-1500-1799"
 	];
 	this.placeFileIndex = -1;
 	this.cableFiles = [
@@ -148,6 +149,7 @@ SurfacingController.prototype.getPlaces = function() {
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/place-600-899?rec=2&ref=0&format=json
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/place-900-1199?rec=2&ref=0&format=json
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/place-1200-1499?rec=2&ref=0&format=json
+	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/place-1500-1799?rec=2&ref=0&format=json
 	
 	if ( !this.useLocalData ) {
 		scalarapi.loadPage('place', true, this.handlePlaces, null, 2);
