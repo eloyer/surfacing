@@ -1,28 +1,28 @@
 {
   "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/20", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/20", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-11-05T12:59:21-08:00", "type" : "literal" }
+      { "value" : "2014-11-05T12:59:21+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:23694", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -40,19 +40,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/20", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/20", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-11-05T12:59:21-08:00", "type" : "literal" }
+      { "value" : "2014-11-05T12:59:21+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:60439", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -61,40 +61,40 @@
       { "value" : "urn:scalar:tag:60439:65008", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala.7", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/donggala" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-04-29T06:41:10-07:00", "type" : "literal" }
+      { "value" : "2014-04-29T06:41:10+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:15514", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala.7", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala.7", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -112,19 +112,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-03-29T16:26:33-07:00", "type" : "literal" }
+      { "value" : "2015-03-29T16:26:33+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:65008", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "-0.666232, 119.744231", "type" : "literal" }
@@ -136,40 +136,40 @@
       { "value" : "urn:scalar:anno:65008:63787", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala.7", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/donggala-house.1#xywh=0,0,0,0", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/donggala-house.1#xywh=0,0,0,0", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/media/donggala-house" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Media", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Media", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-12-13T13:15:02-08:00", "type" : "literal" }
+      { "value" : "2014-12-13T13:15:02+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26290", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/donggala-house.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/donggala-house.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/donggala-house.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/donggala-house.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -181,25 +181,25 @@
       { "value" : "Donggala house", "type" : "literal" }
     ],
     "http://simile.mit.edu/2003/10/ontologies/artstor#url" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/Donggala.jpg", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/Donggala.jpg", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-12-13T13:15:02-08:00", "type" : "literal" }
+      { "value" : "2014-12-13T13:15:02+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:63787", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/donggala-house", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/donggala-house", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -208,40 +208,40 @@
       { "value" : "urn:scalar:path:50687:65008", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surabayamakassardonggalamenado.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/surabayamakassardonggalamenado.2", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/donggala.7#index=3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/donggala.7#index=3", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/surabayamakassardonggalamenado" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-04-30T10:22:18-07:00", "type" : "literal" }
+      { "value" : "2014-04-30T10:22:18+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:15522", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surabayamakassardonggalamenado.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/surabayamakassardonggalamenado.2", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surabayamakassardonggalamenado.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/surabayamakassardonggalamenado.2", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -262,19 +262,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/117", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/117", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-06-23T12:55:52-07:00", "type" : "literal" }
+      { "value" : "2014-06-23T12:55:52+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:50687", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/surabayamakassardonggalamenado", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/surabayamakassardonggalamenado", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -283,40 +283,40 @@
       { "value" : "urn:scalar:tag:60439:65204", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:19:29-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:19:29+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26402", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -334,19 +334,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-05-02T11:28:14-07:00", "type" : "literal" }
+      { "value" : "2015-05-02T11:28:14+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:65204", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "22.208065,114.260281", "type" : "literal" }
@@ -358,40 +358,40 @@
       { "value" : "urn:scalar:anno:65204:64371", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/cape-daguilar-submarine-cable-sign.1#xywh=0,0,0,0", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/cape-daguilar-submarine-cable-sign.1#xywh=0,0,0,0", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/media/cape-daguilar-submarine-cable-sign" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Media", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Media", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-08T11:00:46-08:00", "type" : "literal" }
+      { "value" : "2015-02-08T11:00:46+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26411", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/cape-daguilar-submarine-cable-sign.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/cape-daguilar-submarine-cable-sign.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/cape-daguilar-submarine-cable-sign.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/cape-daguilar-submarine-cable-sign.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -403,25 +403,25 @@
       { "value" : "Cape D'Aguilar submarine cable sign", "type" : "literal" }
     ],
     "http://simile.mit.edu/2003/10/ontologies/artstor#url" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/CapeDAguilar.jpg", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/CapeDAguilar.jpg", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-08T11:00:46-08:00", "type" : "literal" }
+      { "value" : "2015-02-08T11:00:46+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64371", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/media\/cape-daguilar-submarine-cable-sign", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/media/cape-daguilar-submarine-cable-sign", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -430,40 +430,40 @@
       { "value" : "urn:scalar:path:64560:65204", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hontai-2.4", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hontai-2.4", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7#index=2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7#index=2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/hontai-2" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2013-05-28T14:37:04-07:00", "type" : "literal" }
+      { "value" : "2013-05-28T14:37:04+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:14341", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hontai-2.4", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hontai-2.4", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hontai-2.4", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hontai-2.4", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -478,25 +478,25 @@
       { "value" : "1990-2003 (AtlanticCable.com says landed at Cape D' Aguilar; Subsea Book says Deep Water Bay)", "type" : "literal" }
     ],
     "http://rdfs.org/sioc/ns#content" : [
-      { "value" : "This 735km cable has connected Hong Kong and Taiwan since 1990. However, its low capacity of 420 MB\/s and the bursting of the telecommunications bubble in 2001 meant that it was decommissioned long before it was technically obsolete.", "type" : "literal" }
+      { "value" : "This 735km cable has connected Hong Kong and Taiwan since 1990. However, its low capacity of 420 MB/s and the bursting of the telecommunications bubble in 2001 meant that it was decommissioned long before it was technically obsolete.", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-03-09T11:43:07-07:00", "type" : "literal" }
+      { "value" : "2015-03-09T11:43:07+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64560", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hontai-2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hontai-2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/temporal" : [
       { "value" : "1990,2004", "type" : "literal" }
@@ -508,40 +508,40 @@
       { "value" : "urn:scalar:path:64354:65204", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7#index=2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7#index=2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:22:39-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:22:39+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26403", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -556,19 +556,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:26:35-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:26:35+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64354", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -577,40 +577,40 @@
       { "value" : "urn:scalar:tag:62678:65204", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hong-kong.3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hong-kong.3", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/capedaguilar.7", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/capedaguilar.7", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/hong-kong" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2013-05-28T15:54:15-07:00", "type" : "literal" }
+      { "value" : "2013-05-28T15:54:15+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:14356", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hong-kong.3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hong-kong.3", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hong-kong.3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hong-kong.3", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -628,229 +628,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2014-11-16T10:31:14-08:00", "type" : "literal" }
+      { "value" : "2014-11-16T10:31:14+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:62678", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/hong-kong", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/hong-kong", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
-    ]
-  },
-
-  "urn:scalar:tag:60439:64357" : {
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:tag:60439:64357", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782.2", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/23346_126782" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
-      { "value" : "1", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:26:04-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:content:26404", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782.2", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782.2", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2" : {
-    "http://open.vocab.org/terms/versionnumber" : [
-      { "value" : "2", "type" : "literal" }
-    ],
-    "http://purl.org/dc/terms/title" : [
-      { "value" : "23.346_126.782", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
-      { "value" : "plain", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:29:56-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:version:64357", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/coverage" : [
-      { "value" : "23.346984,126.782227", "type" : "literal" }
-    ]
-  },
-
-  "urn:scalar:path:64355:64357" : {
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:path:64355:64357", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782.2#index=1", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
-      { "value" : "1", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:27:52-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:content:26405", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3.1" : {
-    "http://open.vocab.org/terms/versionnumber" : [
-      { "value" : "1", "type" : "literal" }
-    ],
-    "http://purl.org/dc/terms/title" : [
-      { "value" : "Asia-Pacific Cable (APC) part 3", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
-      { "value" : "plain", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:27:52-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:version:64355", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-3", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
-    ]
-  },
-
-  "urn:scalar:path:64359:64357" : {
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:path:64359:64357", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
-    ],
-    "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/23346_126782.2#index=4", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
-      { "value" : "1", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:50:01-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:content:26398", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
-    ]
-  },
-
-  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6" : {
-    "http://open.vocab.org/terms/versionnumber" : [
-      { "value" : "6", "type" : "literal" }
-    ],
-    "http://purl.org/dc/terms/title" : [
-      { "value" : "Asia-Pacific Cable (APC) part 0", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
-      { "value" : "plain", "type" : "literal" }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:31:28-08:00", "type" : "literal" }
-    ],
-    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:version:64359", "type" : "uri" }
-    ],
-    "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0", "type" : "uri" }
-    ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -859,40 +649,40 @@
       { "value" : "urn:scalar:tag:60439:64347", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344.2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/18936118344" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:58:17-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:58:17+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26401", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344.2", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344.2", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -907,19 +697,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:58:42-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:58:42+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64347", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "18.936165,118.344727", "type" : "literal" }
@@ -931,13 +721,13 @@
       { "value" : "urn:scalar:path:64354:64347", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-2.2", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344.2#index=1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344.2#index=1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
@@ -946,13 +736,388 @@
       { "value" : "urn:scalar:path:64359:64347", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/18936118344.2#index=3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/18936118344.2#index=3", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T07:50:01+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:26398", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "6", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Asia-Pacific Cable (APC) part 0", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T08:31:28+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:64359", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:60439:64357" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:60439:64357", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/23346_126782" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T08:26:04+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:26404", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "23.346_126.782", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T08:29:56+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:64357", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/coverage" : [
+      { "value" : "23.346984,126.782227", "type" : "literal" }
+    ]
+  },
+
+  "urn:scalar:path:64355:64357" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:path:64355:64357", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2#index=1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T08:27:52+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:26405", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3.1", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3.1" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "Asia-Pacific Cable (APC) part 3", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-02-05T08:27:52+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:64355", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-3", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:path:64359:64357" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:path:64359:64357", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/23346_126782.2#index=4", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "urn:scalar:tag:60439:65968" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:tag:60439:65968", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/5556_78855.2", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/5556_78855" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/20", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-05T13:19:33+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:24569", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/5556_78855.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/5556_78855.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/5556_78855.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "5.556_78.855", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2015-07-19T09:02:41+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:65968", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/5556_78855", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/coverage" : [
+      { "value" : "5.55692292346633,78.8559955708153", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/identifier" : [
+      { "value" : "5.556_78.855", "type" : "literal" }
+    ]
+  },
+
+  "urn:scalar:path:63400:65968" : {
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:path:63400:65968", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasBody" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40.2", "type" : "uri" }
+    ],
+    "http://www.openannotation.org/ns/hasTarget" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/5556_78855.2#index=1", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
+      { "value" : "1", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#color" : [
+      { "value" : "#548f51", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/20", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-06T09:53:42+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:content:25369", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40.2", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/hasVersion" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40.2", "type" : "uri" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+    ]
+  },
+
+  "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40.2" : {
+    "http://open.vocab.org/terms/versionnumber" : [
+      { "value" : "2", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      { "value" : "SeaMeWe-3 part 40", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#defaultView" : [
+      { "value" : "plain", "type" : "literal" }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      { "value" : "2014-11-24T06:31:35+00:00", "type" : "literal" }
+    ],
+    "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
+      { "value" : "urn:scalar:version:63400", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/isVersionOf" : [
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-3-part-40", "type" : "uri" }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
+    ],
+    "http://purl.org/dc/terms/spatial" : [
+      { "value" : "<LineString><coordinates>79.8668078694606,6.83317094343957,0 78.8559955708153,5.55692292346633,0</coordinates></LineString>", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/identifier" : [
+      { "value" : "1031", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/temporal" : [
+      { "value" : "1999", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/extent" : [
+      { "value" : "39,000 km", "type" : "literal" }
+    ],
+    "http://purl.org/dc/terms/rightsHolder" : [
+      { "value" : "France Telecom,  BT,  KDDI,  SingTel,  Telecom Italia Sparkle,  Telekom Malaysia,  AT&T,  Belgacom,  Communications Authority of Thailand,  China Telecom,  Deutsche Telekom,  Etisalat,  Telecom Egypt,  CTM,  PT Indonesia Satellite Corp.,  Jabatan Telecom Brunei,  KT,  Portugal Telecom,  Maroc Telecom,  PLDT,  Saudi Telecom,  Sri Lanka Telecom,  Turk Telekom,  Tata Communications,  Chunghwa Telecom,  Verizon Business,  KPN,  Telekom Austria,  SingTel Optus,  Telstra,  Vietnam Telecom International,  Omantel,  PCCW,  Pakistan Telecommunications Company Ltd.,  Cytaglobal,  eircom,  LG Uplus,  Softbank Telecom,  Telkom South Africa,  Rostelecom,  TPSA,  SingTel Optus,  Telecom Argentina,  Telecom New Zealand,  Myanmar Post and Telecommunication", "type" : "literal" }
+    ],
+    "http://simile.mit.edu/2003/10/ontologies/artstor#serverurl" : [
+      { "value" : "http://www.seamewe3.com", "type" : "uri" }
     ]
   },
 
@@ -961,40 +1126,40 @@
       { "value" : "urn:scalar:tag:60439:64358", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186.1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/29773_136186" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:30:38-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:30:38+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26406", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1009,19 +1174,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:30:38-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:30:38+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64358", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "29.773318,136.186523", "type" : "literal" }
@@ -1033,40 +1198,40 @@
       { "value" : "urn:scalar:path:64360:64358", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186.1#index=1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186.1#index=1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-4" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:32:34-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:32:34+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26407", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-4.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1081,19 +1246,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T08:32:35-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T08:32:35+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64360", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-4", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-4", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -1102,13 +1267,13 @@
       { "value" : "urn:scalar:path:64359:64358", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/29773_136186.1#index=5", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/29773_136186.1#index=5", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
@@ -1117,40 +1282,40 @@
       { "value" : "urn:scalar:tag:60439:64342", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361.1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/3209_105361" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:52:02-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:52:02+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26399", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1165,19 +1330,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:52:02-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:52:02+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64342", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "3.209718,105.361633", "type" : "literal" }
@@ -1189,40 +1354,40 @@
       { "value" : "urn:scalar:path:64344:64342", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361.1#index=1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361.1#index=1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-1" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:54:20-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:54:20+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26400", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-1.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1237,19 +1402,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T07:54:20-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T07:54:20+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64344", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -1258,13 +1423,13 @@
       { "value" : "urn:scalar:path:64359:64342", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/asia-pacific-cable-apc-part-0.6", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/3209_105361.1#index=2", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/3209_105361.1#index=2", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
@@ -1273,40 +1438,40 @@
       { "value" : "urn:scalar:tag:60439:64362", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/place-1500-1799.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/place-1500-1799.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707.1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/4323_74707" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:04:07-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T09:04:07+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26408", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1321,70 +1486,70 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:04:08-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T09:04:08+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64362", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/coverage" : [
       { "value" : "4.323132,74.707031", "type" : "literal" }
     ]
   },
 
-  "urn:scalar:path:64364:64362" : {
+  "urn:scalar:path:66070:64362" : {
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:path:64364:64362", "type" : "uri" }
+      { "value" : "urn:scalar:path:66070:64362", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1.3", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707.1#index=1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707.1#index=1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:07:14-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T09:07:14+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26410", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1.3", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-1.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1.3", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
-  "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1.1" : {
+  "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1.3" : {
     "http://open.vocab.org/terms/versionnumber" : [
-      { "value" : "1", "type" : "literal" }
+      { "value" : "3", "type" : "literal" }
     ],
     "http://purl.org/dc/terms/title" : [
       { "value" : "SeaMeWe-2 part 1", "type" : "literal" }
@@ -1393,19 +1558,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/20", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:07:14-08:00", "type" : "literal" }
+      { "value" : "2015-08-05T22:37:49+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
-      { "value" : "urn:scalar:version:64364", "type" : "uri" }
+      { "value" : "urn:scalar:version:66070", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-1", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   },
 
@@ -1414,40 +1579,40 @@
       { "value" : "urn:scalar:path:64363:64362", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasBody" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-0.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-0.1", "type" : "uri" }
     ],
     "http://www.openannotation.org/ns/hasTarget" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/4323_74707.1#index=3", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/4323_74707.1#index=3", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/www.openannotation.org\/ns\/Annotation", "type" : "uri" }
+      { "value" : "http://www.openannotation.org/ns/Annotation", "type" : "uri" }
     ]
   },
 
   "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-0" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Composite", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Composite", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#isLive" : [
       { "value" : "1", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:05:57-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T09:05:57+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:content:26409", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#version" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-0.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-0.1", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/hasVersion" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-0.1", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-0.1", "type" : "uri" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#citation" : [
-      { "value" : "method=node\/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
+      { "value" : "method=node/place-1500-1799;methodNumNodes=1;", "type" : "literal" }
     ]
   },
 
@@ -1462,19 +1627,19 @@
       { "value" : "plain", "type" : "literal" }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/users\/113", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/users/113", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/created" : [
-      { "value" : "2015-02-05T09:05:58-08:00", "type" : "literal" }
+      { "value" : "2015-02-05T09:05:58+00:00", "type" : "literal" }
     ],
     "http://scalar.usc.edu/2012/01/scalar-ns#urn" : [
       { "value" : "urn:scalar:version:64363", "type" : "uri" }
     ],
     "http://purl.org/dc/terms/isVersionOf" : [
-      { "value" : "http:\/\/scalar.usc.edu\/nehvectors\/surfacing\/seamewe-2-part-0", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/nehvectors/surfacing/seamewe-2-part-0", "type" : "uri" }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
-      { "value" : "http:\/\/scalar.usc.edu\/2012\/01\/scalar-ns#Version", "type" : "uri" }
+      { "value" : "http://scalar.usc.edu/2012/01/scalar-ns#Version", "type" : "uri" }
     ]
   } 
 }

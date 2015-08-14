@@ -33,7 +33,8 @@ function SurfacingController() {
 		"cable-150-199",
 		"cable-200-249",
 		"cable-250-299",
-		"cable-300-349"
+		"cable-300-349",
+		"cable-350-399"
 	];
 	this.cableFileIndex = -1;
 
@@ -376,6 +377,7 @@ SurfacingController.prototype.getCables = function() {
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-200-249?rec=2&ref=0&format=json
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-250-299?rec=2&ref=0&format=json
 	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-300-349?rec=2&ref=0&format=json
+	// http://scalar.usc.edu/nehvectors/surfacing/rdf/node/cable-350-399?rec=2&ref=0&format=json
 
 	if ( !this.useLocalData ) {
 		scalarapi.loadPage('cable', true, this.handleCables, null, 2);

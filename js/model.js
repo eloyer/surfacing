@@ -38,7 +38,8 @@ SurfacingModel.prototype.muteThemes = null;			// Should the theme regions only b
 
 SurfacingModel.prototype.postProcessPlaces = function() {
 
-	var i, j, k, n, o, p, place, secondaryPlaces, secondaryPlace, image, angleUnit, angle, xdiff, ydiff, cable, isBranch;
+	var i, j, k, n, o, p, place, secondaryPlaces, secondaryPlace, image, 
+		angleUnit, angle, xdiff, ydiff, cable, isBranch;
 	
 	this.nonBranchPlaces = [];
 	
@@ -134,7 +135,7 @@ SurfacingModel.prototype.postProcessPlaces = function() {
 				place.localCables = place.localCables.concat( cable.cableGroupSiblings );
 			} else {
 				place.localCables.push( cable );
-			}
+			}	
 		}
 
 		// other places that the cables that pass through this place touch
@@ -144,9 +145,9 @@ SurfacingModel.prototype.postProcessPlaces = function() {
 			cable = place.localCables[ j ];
 			secondaryPlaces = [];
 			if ( cable.cableGroup != null ) {
-				o = cable.cableGroupSiblings.length;
-				for ( j = 0; j < o; j++ ) {
-					sibling = cable.cableGroupSiblings[ j ];
+				p = cable.cableGroupSiblings.length;
+				for ( k = 0; k < p; k++ ) {
+					sibling = cable.cableGroupSiblings[ k ];
 					secondaryPlaces = secondaryPlaces.concat( sibling.getRelatedNodes( 'path', 'outgoing' ) );
 				}
 			} else {
@@ -213,26 +214,33 @@ SurfacingModel.prototype.postProcessThemes = function() {
 
 SurfacingModel.prototype.postProcessCables = function() {
 
-	var i, j, n, o, nodes, node, cable;
+	var i, j, k, n, o, p, nodes, node, cable, places, place, index;
 
 	n = this.cables.length;
 	for ( i = 0; i < n; i++ ) {
 		cable = this.cables[ i ];
+		cable.isHidden = false;
 		cable.cableGroupSiblings = [];
 		nodes = cable.getRelatedNodes( 'tag', 'incoming' );
 		o = nodes.length;
-		for ( j = 0; j < o; j++ ) {
-			node = nodes[ j ];
-			//if ( model.cableGroups.indexOf( node ) != -1 ) {
-			if ( model.cableGroupNames.indexOf( node.slug ) != -1 ) {
-				if ( node.children == null ) {
-					node.children = [];
+		if ( o == 0 ) {
+			cable.isHidden = true;
+		} else {
+			for ( j = 0; j < o; j++ ) {
+				node = nodes[ j ];
+				if ( node.slug == "temporary-cable" ) {
+					cable.isHidden = true;
+
+				} else if ( model.cableGroupNames.indexOf( node.slug ) != -1 ) {
+					if ( node.children == null ) {
+						node.children = [];
+					}
+					node.children.push( cable );
+					//console.log( "Got cable group" );
+					cable.cableGroup = node;
+					cable.cableGroupSiblings = node.getRelatedNodes( 'tag', 'outgoing' );
+					break;
 				}
-				node.children.push( cable );
-				//console.log( "Got cable group" );
-				cable.cableGroup = node;
-				cable.cableGroupSiblings = node.getRelatedNodes( 'tag', 'outgoing' );
-				break;
 			}
 		}
 	}

@@ -898,7 +898,11 @@ SurfacingView.prototype.getRelatedNodes = function() {
 		} else {
 			this.currentTheme = null;
 		}
-		this.setCurrentStoryFromImage( this.currentImage );
+		/*if ( this.lastState == ViewState.Theme ) {
+			this.setCurrentStoryFromTheme( this.currentTheme );
+		} else {*/
+			this.setCurrentStoryFromImage( this.currentImage );
+		//}
 		/*n = this.currentImage.stories.length;
 		for ( i = 0; i < n; i++ ) {
 			node = this.currentImage.stories[ i ];
@@ -1211,6 +1215,29 @@ SurfacingStories.prototype.storyInventory = null;
 SurfacingStories.prototype.imageItems = null;
 SurfacingStories.prototype.lastOpenedStory = null;
 
+SurfacingStories.prototype.populateStoryInventories = function( stories ) {
+
+	var i, story, storyGroup,
+		n = stories.length;
+
+	for ( i = 0; i < n; i++ ) {
+		story = stories[ i ];
+		storyGroup = model.getStoryGroupFromStory( story );
+		if ( this.storyGroupInventory.indexOf( story ) == -1 ) {
+			this.storyItems.push( {
+				'name': story.getDisplayTitle(),
+				'node': story,
+				'type': 'story',
+				'isOpen': false,
+				'isSibling': false
+			} );
+			this.storyGroupInventory.push( storyGroup );
+			this.storyInventory.push( story );
+		}
+	}
+
+}
+
 SurfacingStories.prototype.update = function() {
 
 	var me = this;
@@ -1238,49 +1265,39 @@ SurfacingStories.prototype.update = function() {
 			if ( view.targetState == ViewState.Theme ) {
 
 				if ( view.currentTheme != null ) {
-				
-					// add all the stories that annotate the current image
-					n = view.currentTheme.stories.length;
-					for ( i = 0; i < n; i++ ) {
-						story = view.currentTheme.stories[ i ];
-						storyGroup = model.getStoryGroupFromStory( story );
-						if ( this.storyGroupInventory.indexOf( story ) == -1 ) {
-							this.storyItems.push( {
-								'name': story.getDisplayTitle(),
-								'node': story,
-								'type': 'story',
-								'isOpen': false,
-								'isSibling': false
-							} );
-							this.storyGroupInventory.push( storyGroup );
-							this.storyInventory.push( story );
-						}
-					}
+					this.populateStoryInventories( view.currentTheme.stories );
 				}
 				
 				this.items = this.storyItems.concat();
 				
 			} else {
-				
-				if ( view.currentImage != null ) {
-				
-					// add all the stories that annotate the current image
-					n = view.currentImage.stories.length;
-					for ( i = 0; i < n; i++ ) {
-						story = view.currentImage.stories[ i ];
-						storyGroup = model.getStoryGroupFromStory( story );
-						if ( this.storyGroupInventory.indexOf( story ) == -1 ) {
-							this.storyItems.push( {
-								'name': story.getDisplayTitle(),
-								'node': story,
-								'type': 'story',
-								'isOpen': false,
-								'isSibling': false
-							} );
-							this.storyGroupInventory.push( storyGroup );
-							this.storyInventory.push( story );
+
+				if (( view.lastState == ViewState.Theme ) && ( view.currentTheme != null )) {
+					if ( view.currentImage != null ) {
+
+						// get all stories from all images linked to the current place
+						// that are part of the current theme
+						var stories = [];
+						o = view.currentPlace.images.length;
+						for ( j = 0; j < o; j++ ) {
+							image = view.currentPlace.images[ j ];
+							n = image.stories.length;
+							for ( i = 0; i < n; i++ ) {
+								story = image.stories[ i ];
+								if ( view.currentTheme.stories.indexOf( story ) != -1 ) {
+									stories.push( story );
+								}
+							}
 						}
+
+						this.populateStoryInventories( stories );
+
+					} else {
+						this.populateStoryInventories( view.currentTheme.stories );
 					}
+
+				} else if ( view.currentImage != null ) {
+					this.populateStoryInventories( view.currentImage.stories );
 				}
 				
 				n = this.storyItems.length;
@@ -2713,7 +2730,8 @@ SurfacingVisualization.prototype.perFrame = function( overrideThrottle ) {
 
 SurfacingVisualization.prototype.update = function() {
 			
-	var i, n, backgroundZoom, opacity, storyX, storyZ, storyOpacity, imageZ, imageOpacity, node,
+	var i, j, n, o, backgroundZoom, opacity, storyX, storyZ, 
+		storyOpacity, imageZ, imageOpacity, node, tags, tag,
 		processedNodes = [],
 		storyImages = [],
 		me = this;
@@ -2774,96 +2792,26 @@ SurfacingVisualization.prototype.update = function() {
 		break;
 	
 	}
-	
-	/*
-	storyImages = model.getStoryGroupImagesFromStory( view.currentStory );
-	
-	var index = storyImages.indexOf( view.currentImage );
-
-	images = d3.select( 'body' ).selectAll( '.story-image' ).data( storyImages )
-		.attr( 'src', function( d ) { 
-			var temp = d.current.sourceFile.split( 'media' );
-			//var url = temp.join( 'media/medium' ); // this is the real deal
-			var url = 'media' + temp[ temp.length - 1 ]; // this is temporary for local images
-			return url;
-		} );
-	
-	images.enter().append( 'img' )
-		.attr( 'class', 'story-image' )
-		.attr( 'src', function( d ) { 
-			var temp = d.current.sourceFile.split( 'media' );
-			//var url = temp.join( 'media/medium' ); // this is the real deal
-			var url = 'media' + temp[ temp.length - 1 ]; // this is temporary for local images
-			return url;
-		} )
-		.attr( 'width', 240 )
-		/*.attr( 'style', function() {
-			var x = Math.round( window.innerWidth * Math.random() );
-			var y = Math.round( window.innerWidth * Math.random() );
-			return '-webkit-transform: translate3d( ' + x + 'px, ' + y + 'px, 0 ); -moz-transform: translate3d( ' + x + 'px, ' + y + 'px, 0 );';
-		} )
-		.on( 'click', function( d ) {
-			alert( 'select image' );
-			view.selectImage( d );
-		} );
-		
-	if ( storyImages.length > 4 ) {
-		alert( 'lots of images: ' + storyImages.length );
-	}
-	
-	$( '.story-image' ).each( function( i ) {
-		var finalOpacity = imageOpacity;
-		if ( i >= storyImages.length ) {
-			finalOpacity = 0;
-		}
-		var x = Math.round( ( window.innerWidth * .25 ) + (( window.innerWidth * .2 ) * Math.random()) - ( window.innerWidth * .1 ) );
-		var y = Math.round(( window.innerHeight / ( storyImages.length + 1 )) * ( i + 1 )) - 95;
-		//var y = Math.round( ( window.innerHeight * .5 ) + (( window.innerHeight * .4 ) * Math.random()) - ( window.innerHeight * .2 ) );
-		var z = Math.round( 100 * Math.random() );
-		var scale = 1.0 + ( Math.random() * .5 );
-		var rotation = Math.round( 20 * Math.random() - 10 );
-		var transform;
-		if ( $( this ).attr( 'src' ) == $( this ).data( 'lastSrc' ) ) {
-			var lastPos = $( this ).data( 'lastPos' );
-			transform = 'rotateZ( ' + lastPos.r + 'deg ) translate3d( ' + lastPos.x + 'px, ' + lastPos.y + 'px, ' + imageZ + 'px ) scale( ' + lastPos.s + ' )';
-			$( this ).attr( 'style', '-webkit-transform: ' + transform +'; -moz-transform: ' + transform + '; opacity: ' + finalOpacity + ';' );
-		} else {
-			transform = 'rotateZ( ' + rotation + 'deg ) translate3d( ' + x + 'px, ' + y + 'px, ' + imageZ + 'px ) scale( ' + scale + ' )';
-			$( this ).attr( 'style', '-webkit-transform: ' + transform + '; -moz-transform: ' + transform + '; opacity: ' + finalOpacity + ';' );
-		}
-		//alert( transform );
-		$( this ).data( 'lastSrc', $( this ).attr( 'src' ) );
-		$( this ).data( 'lastPos', { x: x, y: y, r: rotation, s: scale } );
-	});*/
-		
-	//alert( 'translate3d( ' + Math.round( Math.random() * 90 ) + '%, ' + Math.round( Math.random() * 90 ) + '%, 0 )' );
-		
-	/*images.transition().duration( 1000 ).style( 'top', function( d, i ) { 
-		if ( d == view.currentImage ) {
-			return '-170px';
-		} else {
-			if (( index != -1 ) && ( i > index )) {
-				return ( 10 + ( ( i - 1 ) * 160 )) + 'px'; 
-			} else {
-				return ( 10 + ( i * 160 )) + 'px'; 
-			}
-		}
-	} );*/
-		
-	//images.exit().transition().duration( 1000 ).style( 'top', '-170px' ).remove();
-	//images.exit().remove();
 
 	// this replaces references to cables that are in cable groups with the cable
 	// groups themselves, making sure there are no duplicates
 	n = view.relatedNodes.length;
 	for ( i = 0; i < n; i++ ) {
+
 		node = view.relatedNodes[ i ];
-		if ( node.cableGroup != null ) {
-			node = node.cableGroup;
+
+		// a cable with no incoming relations is a sign that it's only been included by association,
+		// and wasn't meant to actually be displayed
+		if ( !node.isHidden && ( node.incomingRelations.length > 0 )) {
+			if ( node.cableGroup != null ) {
+				node = node.cableGroup;
+			}
+
+			if ( processedNodes.indexOf( node ) == -1 ) {
+				processedNodes.push( node );
+			}
 		}
-		if ( processedNodes.indexOf( node ) == -1 ) {
-			processedNodes.push( node );
-		}
+
 	}	
 	
 	// draw the chips
